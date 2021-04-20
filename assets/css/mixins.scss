@@ -1,0 +1,110 @@
+@mixin transitioning() {
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+@mixin borderradius($br) {
+  -moz-border-radius: $br;
+  -webkit-border-radius: $br;
+  -o-border-radius: $br;
+  border-radius: $br;
+}
+
+@mixin menuHoverEffect {
+  overflow: hidden;
+  margin: 0 10px;
+  padding-bottom: 5px;
+  position: relative;
+  font-size: 15px;
+  a {
+    text-decoration: none;
+    color: $deepBlue;
+    @include transitioning();
+  }
+  &.active {
+    a {
+      color: $lightCoffee;
+      font-weight: bold;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $lightCoffee;
+      @include transitioning();
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $lightCoffee;
+    @include transitioning();
+  }
+  &:hover {
+    a{
+      color: $lightCoffee;
+    }
+  }
+  &:hover::before {
+    left: 0;
+  }
+}
+
+@mixin btnHoverEffect {
+  overflow: hidden;
+  text-decoration: none;
+  padding: 5px 15px;
+  border: 2px solid $lightCoffee;
+  background-color: transparent;
+  color: $lightCoffee;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  @include borderradius(30px);
+  &::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $lightCoffee;
+    z-index: -1;
+    @include transitioning();
+  }
+  &:hover {
+    &::before{
+      left: 0;
+    }
+    color: $white;
+  }
+}
+
+@mixin mainHeaderStyle {
+  color: $deepBlue;
+  border-left: 3px solid $lightCoffee;
+  padding: 8px;
+}
+
+@mixin flexCenterAlignment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin simpleShadow {
+  box-shadow: 0 0 15px 2px #888;
+}

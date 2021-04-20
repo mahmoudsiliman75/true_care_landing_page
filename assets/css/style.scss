@@ -1,0 +1,108 @@
+// START:: VARIABLES
+@import 'variables.scss';
+// END:: VARIABLES
+
+// START:: MIXINS
+@import 'mixins.scss';
+// END:: MIXINS
+
+// START:: GLOBAL STYLES
+body {
+  font-family: 'Cairo', sans-serif;
+  overflow-x: hidden;
+  // height: 20000px;
+  &::-webkit-scrollbar {
+    background-color: $lighterGrey;
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $deepBlue;
+  }
+}
+
+// START:: FLEX SLIDER GLOBAL STYLES
+.flexslider {
+  margin-bottom: 15px !important;
+  .flex-viewport {
+    max-height: 400px !important;
+    .slides {
+      img,
+      iframe {
+        border-radius: $borderRadiusAmount;
+        min-height: 400px;
+        max-height: 400px;
+        width: 100%
+      }
+      .min_img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 100px;
+        max-height: 100px;
+      }
+    } 
+  }
+
+  .flex-control-thumbs {
+    max-height: 120px !important;
+    li {
+      padding: 0 5px;
+      img {
+        height: 120px !important;
+        border-radius: $borderRadiusAmount;
+      }
+    }
+  }
+
+  .flex-direction-nav {
+    display: none !important;
+  }
+}
+// END:: FLEX SLIDER GLOBAL STYLES
+
+.header_img_wraper {
+  position: relative;
+  min-height: 250px;
+  max-height: 250px;
+  img {
+    width: 100%;
+    min-height: 250px;
+    max-height: 250px;
+  }
+  .section_svg {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .section_svg svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+  }
+
+  .section_svg .shape-fill {
+    fill: #FFFFFF;
+  }
+
+  /** For tablet devices **/
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .section_svg svg {
+      width: calc(133% + 1.3px);
+      height: 41px;
+    }
+  }
+
+/** For mobile devices **/
+  @media (max-width: 767px) {
+    .section_svg svg {
+      width: calc(199% + 1.3px);
+      height: 52px;
+    }
+  }
+}
+// END:: GLOBAL STYLES
