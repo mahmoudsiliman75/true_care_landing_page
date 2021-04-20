@@ -106,3 +106,57 @@ body {
   }
 }
 // END:: GLOBAL STYLES
+
+// START:: LARGE SCREENS NAV STYLES
+nav {
+  @include flexCenterAlignment();
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #1c1427;
+
+  .logo {
+    a {
+      text-decoration: none;
+      color: $pink;
+      font-family: 'Lobster', cursive;
+      font-size: 33px;
+      span {
+        font-weight: 600;
+        color: $purple;
+      }
+    }
+  }
+
+  .links_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 600;
+      margin-inline: 8px;
+      a {
+        text-decoration: none;
+        color: $white;
+        @include transitioning();
+        &.active, 
+        &:hover {
+          color: $pink;
+        }
+      }
+
+      &.translate_btn {
+        margin-inline-start: 30px;
+        a {
+          color: $pink;
+          @include transitioning();
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+// END:: LARGE SCREENS NAV STYLES

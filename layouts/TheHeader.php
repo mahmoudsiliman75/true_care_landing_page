@@ -35,7 +35,7 @@
   <!-- END:: INCLUDING WOW JS STYLE FILE -->
 
   <!-- START: INCLUDING GOOGLE FONT -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&family=Lobster&display=swap">
   <!-- START: INCLUDING GOOGLE FONT -->
 
   <!-- START:: INCLUDING MAIN STYLE FILE -->
@@ -52,6 +52,25 @@
 
 <!-- START:: NAV BAR -->
 <nav>
-  
+  <div class="logo">
+    <a href="index.php">
+      <span> True </span> Care
+    </a>
+  </div>
+
+  <ul class="links_list">
+    <li> <a href="index.php#home_sec" class="active"> Home </a> </li>
+    <li> <a href="index.php#about_sec"> About </a> </li>
+    <li> <a href="index.php#apps_sec"> Appliations </a> </li>
+    <li> <a href="index.php#contact_sec"> Contact US </a> </li>
+
+    <!-- START:: TRANSLATION BTN -->
+    <li class="translate_btn"> 
+      <a href="#"> 
+        <i class="fas fa-globe fa-lg"></i> 
+      </a> 
+    </li>
+    <!-- END:: TRANSLATION BTN -->
+  </ul>
 </nav>
 <!-- END:: NAV BAR -->
