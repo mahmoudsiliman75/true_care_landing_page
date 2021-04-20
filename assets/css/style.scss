@@ -19,100 +19,20 @@ body {
     background-color: $deepBlue;
   }
 }
-
-// START:: FLEX SLIDER GLOBAL STYLES
-.flexslider {
-  margin-bottom: 15px !important;
-  .flex-viewport {
-    max-height: 400px !important;
-    .slides {
-      img,
-      iframe {
-        border-radius: $borderRadiusAmount;
-        min-height: 400px;
-        max-height: 400px;
-        width: 100%
-      }
-      .min_img {
-        min-width: 150px;
-        max-width: 150px;
-        min-height: 100px;
-        max-height: 100px;
-      }
-    } 
-  }
-
-  .flex-control-thumbs {
-    max-height: 120px !important;
-    li {
-      padding: 0 5px;
-      img {
-        height: 120px !important;
-        border-radius: $borderRadiusAmount;
-      }
-    }
-  }
-
-  .flex-direction-nav {
-    display: none !important;
-  }
-}
-// END:: FLEX SLIDER GLOBAL STYLES
-
-.header_img_wraper {
-  position: relative;
-  min-height: 250px;
-  max-height: 250px;
-  img {
-    width: 100%;
-    min-height: 250px;
-    max-height: 250px;
-  }
-  .section_svg {
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  .section_svg svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 50px;
-  }
-
-  .section_svg .shape-fill {
-    fill: #FFFFFF;
-  }
-
-  /** For tablet devices **/
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .section_svg svg {
-      width: calc(133% + 1.3px);
-      height: 41px;
-    }
-  }
-
-/** For mobile devices **/
-  @media (max-width: 767px) {
-    .section_svg svg {
-      width: calc(199% + 1.3px);
-      height: 52px;
-    }
-  }
-}
 // END:: GLOBAL STYLES
 
 // START:: LARGE SCREENS NAV STYLES
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   @include flexCenterAlignment();
   justify-content: space-between;
   padding: 15px;
-  background-color: #1c1427;
+  background-color: transparent;
+  // background-color: $deepPurple;
 
   .logo {
     a {
@@ -122,7 +42,7 @@ nav {
       font-size: 33px;
       span {
         font-weight: 600;
-        color: $purple;
+        color: $lightPurple;
       }
     }
   }
@@ -160,3 +80,164 @@ nav {
   }
 }
 // END:: LARGE SCREENS NAV STYLES
+
+// START:: HOME SECTION STYLES
+.home_sec {
+  height: 100vh;
+  background-color: $midPurple;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .balon_overlay {
+    span {
+      z-index: 1;
+      position: absolute;
+      display: block;
+      @include borderRadius($borderRadiusAmount);
+      background-color: rgba(225, 225, 225, 0.3);
+      @include simpleShadow();
+      &.shape1 {
+        width: 100px;
+        height: 100px;
+        left: 5%;
+        bottom: -25%;
+        animation: balons infinite;
+        animation-duration: 15s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+      }
+      &.shape2 {
+        width: 50px;
+        height: 50px;
+        left: 15%;
+        bottom: -25%;
+        animation: balons infinite;
+        animation-duration: 15s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+      }
+      &.shape3 {
+        width: 120px;
+        height: 120px;
+        left: 30%;
+        bottom: -25%;
+        animation: balons infinite;
+        animation-duration: 15s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 6;
+      }
+      &.shape4 {
+        width: 80px;
+        height: 80px;
+        left: 40%;
+        bottom: -25%;
+        animation: balons infinite;
+        animation-duration: 15s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 4s;
+      }
+      &.shape5 {
+        width: 100px;
+        height: 100px;
+        left: 70%;
+        bottom: -25%;
+        animation: balons infinite;
+        animation-duration: 15s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 5s;
+      }
+      &.shape6 {
+        width: 70px;
+        height: 70px;
+        left: 90%;
+        bottom: -25%;
+        animation: balons infinite;
+        animation-duration: 15s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 4.5s;
+      }
+      &.shape7 {
+        width: 130px;
+        height: 130px;
+        left: 50%;
+        bottom: -25%;
+        animation: balons infinite;
+        animation-duration: 15s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 2s;
+      }
+      &.shape8 {
+        width: 90px;
+        height: 90px;
+        left: 35%;
+        bottom: -25%;
+        animation: balons infinite;
+        animation-duration: 15s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 2.5s;
+      }
+      &.shape9 {
+        width: 100px;
+        height: 100px;
+        left: 70%;
+        bottom: -25%;
+        animation: balons infinite;
+        animation-duration: 15s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 3s;
+      }
+      &.shape10 {
+        width: 100px;
+        height: 100px;
+        left: 20%;
+        bottom: -25%;
+        animation: balons infinite;
+        animation-duration: 15s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.5s;
+        animation-delay: 2s;
+      }    
+    }
+  }
+
+  .home_info {
+    height: 100%;
+    .container-fluid {
+      height: 100%;
+      .row {
+        height: 100%;
+        @include flexCenterAlignment();
+        // .mockup_wraper {
+
+        // }
+
+        .info_wraper {
+          h1 {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes balons {
+  0% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  100% {
+    bottom: 120%;
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+}
+// END:: HOME SECTION STYLES

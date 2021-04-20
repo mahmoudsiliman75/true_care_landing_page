@@ -22,10 +22,6 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- END:: INCLUDING BOOTSTRAP STYLE FILE -->
 
-  <!-- START:: INCLUDING FLEX SLIDER STYLE FILE -->
-  <link rel="stylesheet" href="assets/css/flexslider.css">
-  <!-- END:: INCLUDING FLEX SLIDER STYLE FILE -->
-
   <!-- START:: INCLUDING BOOTSTRAP SELECT STYLE FILE -->
   <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
   <!-- END:: INCLUDING BOOTSTRAP SELECT STYLE FILE -->
@@ -62,7 +58,7 @@
     <li> <a href="index.php#home_sec" class="active"> Home </a> </li>
     <li> <a href="index.php#about_sec"> About </a> </li>
     <li> <a href="index.php#apps_sec"> Appliations </a> </li>
-    <li> <a href="index.php#contact_sec"> Contact US </a> </li>
+    <li> <a href="index.php#contact_sec"> Contact Us </a> </li>
 
     <!-- START:: TRANSLATION BTN -->
     <li class="translate_btn"> 

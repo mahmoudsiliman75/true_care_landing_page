@@ -12,97 +12,12 @@ body::-webkit-scrollbar-thumb {
   background-color: #00303f;
 }
 
-.flexslider {
-  margin-bottom: 15px !important;
-}
-
-.flexslider .flex-viewport {
-  max-height: 400px !important;
-}
-
-.flexslider .flex-viewport .slides img,
-.flexslider .flex-viewport .slides iframe {
-  border-radius: 10px;
-  min-height: 400px;
-  max-height: 400px;
-  width: 100%;
-}
-
-.flexslider .flex-viewport .slides .min_img {
-  min-width: 150px;
-  max-width: 150px;
-  min-height: 100px;
-  max-height: 100px;
-}
-
-.flexslider .flex-control-thumbs {
-  max-height: 120px !important;
-}
-
-.flexslider .flex-control-thumbs li {
-  padding: 0 5px;
-}
-
-.flexslider .flex-control-thumbs li img {
-  height: 120px !important;
-  border-radius: 10px;
-}
-
-.flexslider .flex-direction-nav {
-  display: none !important;
-}
-
-.header_img_wraper {
-  position: relative;
-  min-height: 250px;
-  max-height: 250px;
-  /** For tablet devices **/
-  /** For mobile devices **/
-}
-
-.header_img_wraper img {
-  width: 100%;
-  min-height: 250px;
-  max-height: 250px;
-}
-
-.header_img_wraper .section_svg {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.header_img_wraper .section_svg svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 50px;
-}
-
-.header_img_wraper .section_svg .shape-fill {
-  fill: #FFFFFF;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .header_img_wraper .section_svg svg {
-    width: calc(133% + 1.3px);
-    height: 41px;
-  }
-}
-
-@media (max-width: 767px) {
-  .header_img_wraper .section_svg svg {
-    width: calc(199% + 1.3px);
-    height: 52px;
-  }
-}
-
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,7 +31,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px;
-  background-color: #1c1427;
+  background-color: transparent;
 }
 
 nav .logo a {
@@ -168,5 +83,235 @@ nav .links_list li.translate_btn a {
 
 nav .links_list li.translate_btn a:hover {
   color: #fff;
+}
+
+.home_sec {
+  height: 100vh;
+  background-color: #1e1535;
+  position: relative;
+  overflow: hidden;
+}
+
+.home_sec img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.home_sec .balon_overlay span {
+  z-index: 1;
+  position: absolute;
+  display: block;
+  border-radius: 10px;
+  background-color: rgba(225, 225, 225, 0.3);
+  -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.3);
+          box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.3);
+}
+
+.home_sec .balon_overlay span.shape1 {
+  width: 100px;
+  height: 100px;
+  left: 5%;
+  bottom: -25%;
+  -webkit-animation: balons infinite;
+          animation: balons infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.home_sec .balon_overlay span.shape2 {
+  width: 50px;
+  height: 50px;
+  left: 15%;
+  bottom: -25%;
+  -webkit-animation: balons infinite;
+          animation: balons infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.home_sec .balon_overlay span.shape3 {
+  width: 120px;
+  height: 120px;
+  left: 30%;
+  bottom: -25%;
+  -webkit-animation: balons infinite;
+          animation: balons infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 6;
+          animation-delay: 6;
+}
+
+.home_sec .balon_overlay span.shape4 {
+  width: 80px;
+  height: 80px;
+  left: 40%;
+  bottom: -25%;
+  -webkit-animation: balons infinite;
+          animation: balons infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.home_sec .balon_overlay span.shape5 {
+  width: 100px;
+  height: 100px;
+  left: 70%;
+  bottom: -25%;
+  -webkit-animation: balons infinite;
+          animation: balons infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.home_sec .balon_overlay span.shape6 {
+  width: 70px;
+  height: 70px;
+  left: 90%;
+  bottom: -25%;
+  -webkit-animation: balons infinite;
+          animation: balons infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.home_sec .balon_overlay span.shape7 {
+  width: 130px;
+  height: 130px;
+  left: 50%;
+  bottom: -25%;
+  -webkit-animation: balons infinite;
+          animation: balons infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.home_sec .balon_overlay span.shape8 {
+  width: 90px;
+  height: 90px;
+  left: 35%;
+  bottom: -25%;
+  -webkit-animation: balons infinite;
+          animation: balons infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.home_sec .balon_overlay span.shape9 {
+  width: 100px;
+  height: 100px;
+  left: 70%;
+  bottom: -25%;
+  -webkit-animation: balons infinite;
+          animation: balons infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.home_sec .balon_overlay span.shape10 {
+  width: 100px;
+  height: 100px;
+  left: 20%;
+  bottom: -25%;
+  -webkit-animation: balons infinite;
+          animation: balons infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.home_sec .home_info {
+  height: 100%;
+}
+
+.home_sec .home_info .container-fluid {
+  height: 100%;
+}
+
+.home_sec .home_info .container-fluid .row {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home_sec .home_info .container-fluid .row .info_wraper h1 {
+  color: #fff;
+}
+
+@-webkit-keyframes balons {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+  100% {
+    bottom: 120%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes balons {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+  100% {
+    bottom: 120%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
