@@ -10,7 +10,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #00303f;
+  background-color: #271a4a;
 }
 
 nav {
@@ -95,7 +95,7 @@ nav .links_list li.translate_btn a:hover {
 
 .intro_sec {
   height: 100vh;
-  background-color: #1e1535;
+  background-color: #271a4a;
   position: relative;
   overflow: hidden;
 }
@@ -348,5 +348,76 @@ nav .links_list li.translate_btn a:hover {
             transform: rotate(180deg);
     opacity: 0;
   }
+}
+
+.about_sec {
+  padding: 60px 0;
+}
+
+.about_sec .about_content_wraper h2 {
+  font-size: 3rem;
+  color: #666;
+}
+
+.about_sec .about_content_wraper h2 span {
+  color: #FF449C;
+  font-family: 'Lobster', cursive;
+}
+
+.about_sec .about_content_wraper h2 span span {
+  color: #7D4196;
+}
+
+.about_sec .about_content_wraper .text {
+  color: #666;
+  text-align: start;
+  word-break: break-word;
+  font-size: 18px;
+  word-spacing: 4px;
+  line-height: 1.5;
+}
+
+.about_sec .cards_wraper .row > div:nth-child(2), .about_sec .cards_wraper .row > div:nth-child(4) {
+  margin-top: 30px;
+}
+
+.about_sec .cards_wraper .row > div:nth-child(1), .about_sec .cards_wraper .row > div:nth-child(3) {
+  margin-top: 10px;
+}
+
+@media (max-width: 1091px) {
+  .about_sec .cards_wraper .row > div:nth-child(1), .about_sec .cards_wraper .row > div:nth-child(2), .about_sec .cards_wraper .row > div:nth-child(3), .about_sec .cards_wraper .row > div:nth-child(4) {
+    margin-top: 5px;
+  }
+}
+
+.about_sec .cards_wraper .card {
+  min-height: 260px;
+  max-height: 260px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #271a4a;
+  text-align: center;
+  padding: 15px;
+  -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+          box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+}
+
+.about_sec .cards_wraper .card .icon_wraper img {
+  min-height: 65px;
+  max-height: 65px;
+  min-width: 65px;
+  max-width: 65px;
+}
+
+.about_sec .cards_wraper .card .card_details h4 {
+  margin-block: 15px;
+  color: #150f25;
+}
+
+.about_sec .cards_wraper .card .card_details > div {
+  color: #666;
+  font-size: 16px;
+  word-break: break-word;
 }
 /*# sourceMappingURL=style.css.map */

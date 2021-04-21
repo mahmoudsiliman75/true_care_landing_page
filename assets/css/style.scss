@@ -16,7 +16,7 @@ body {
     width: 5px;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $deepBlue;
+    background-color: $midPurple;
   }
 }
 // END:: GLOBAL STYLES
@@ -265,6 +265,84 @@ nav {
 
 // START:: ABOUT SECTION STYLES
 .about_sec {
+  padding: $paddingAmount+10 0;
+  .about_content_wraper {
+    h2 {
+      font-size: 3rem;
+      color: $lightGrey;
+      span {
+        color: $pink;
+        font-family: 'Lobster', cursive;
+        span {
+          color: $lightPurple;
+        }
+      }
+    }
+    .text{
+      color: $lightGrey;
+      text-align: start;
+      word-break: break-word;
+      font-size: 18px;
+      word-spacing: 4px;
+      line-height: 1.5;
+    }
+  }
 
+  .cards_wraper {
+    .row {
+      & > div {
+        &:nth-child(2),
+        &:nth-child(4) {
+          margin-top: 30px;
+        }
+        
+        &:nth-child(1),
+        &:nth-child(3) {
+          margin-top: 10px;
+        }
+
+        @media ( max-width: 1091px ) {
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4)
+          {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    .card {
+      min-height: 260px;
+      max-height: 260px;
+      @include borderRadius(0);
+      border: none;
+      border-bottom: 2px solid $midPurple;
+      text-align: center;
+      padding: 15px;
+      @include midShadow();
+
+      .icon_wraper {
+        img {
+          min-height: 65px;
+          max-height: 65px;
+          min-width: 65px;
+          max-width: 65px;
+        }
+      }
+
+      .card_details {
+        h4 {
+          margin-block: 15px;
+          color: $deepPurple;
+        }
+        & > div {
+          color: $lightGrey;
+          font-size: 16px;
+          word-break: break-word;
+        }
+      }
+    }
+  }
 }
 // END:: ABOUT SECTION STYLES
