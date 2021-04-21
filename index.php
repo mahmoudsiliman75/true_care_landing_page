@@ -143,6 +143,16 @@
   </div>
   <!-- END:: ABOUT SECTION -->
 
+  <!-- START:: APPLICATIONS SECTION -->
+  <div class="applications_sec">
+    <div class="container">
+      <div class="header_wraper">
+        <h2> Applications </h2>
+      </div>
+    </div>
+  </div>
+  <!-- END:: APPLICATIONS SECTION -->
+
 <!-- START:: INCLUDING THE FOOTER -->
 <?php include('layouts/TheFooter.php')?>
 <!-- END:: INCLUDING THE FOOTER -->
