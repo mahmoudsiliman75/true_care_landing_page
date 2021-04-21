@@ -4,13 +4,17 @@
 // })
 // // END:: HANDILING PRELOADER
 
-// $(document).ready( function() {
-//   // START:: COUNT UP
-// //   $('.counter').counterUp({
-// //     delay: 10,
-// //     time: 1000
-// // });
-//   // END:: COUNT UP
+$(document).ready( function() {
+  // START:: STKY NAV BAR
+    $(window).on('scroll',function() {
+      if ( $(window).scrollTop() ) {
+        $('#custom_nav').addClass('stiky');
+      } else {
+        $('#custom_nav').removeClass('stiky');
+      }
+    });
+  // END:: STKY NAV BAR
+
 
 //   // START:: WOW JS
 //   wow = new WOW(
@@ -334,4 +338,4 @@
 //     $(this).parent().siblings('.amount').text(productAmount);
 //   });
 //   // END:: CART INCREASE & DECREASE BTNS
-// });
+});

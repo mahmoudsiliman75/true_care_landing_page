@@ -1,6 +1,7 @@
 body {
   font-family: 'Cairo', sans-serif;
   overflow-x: hidden;
+  height: 20000px;
 }
 
 body::-webkit-scrollbar {
@@ -30,8 +31,15 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px;
+  padding: 20px;
   background-color: transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+nav.stiky {
+  padding: 8px;
+  background-color: #150f25;
 }
 
 nav .logo a {
@@ -85,14 +93,14 @@ nav .links_list li.translate_btn a:hover {
   color: #fff;
 }
 
-.home_sec {
+.intro_sec {
   height: 100vh;
   background-color: #1e1535;
   position: relative;
   overflow: hidden;
 }
 
-.home_sec img {
+.intro_sec img {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -100,7 +108,7 @@ nav .links_list li.translate_btn a:hover {
   z-index: 2;
 }
 
-.home_sec .balon_overlay span {
+.intro_sec .balon_overlay span {
   z-index: 1;
   position: absolute;
   display: block;
@@ -110,7 +118,7 @@ nav .links_list li.translate_btn a:hover {
           box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.3);
 }
 
-.home_sec .balon_overlay span.shape1 {
+.intro_sec .balon_overlay span.shape1 {
   width: 100px;
   height: 100px;
   left: 5%;
@@ -125,7 +133,7 @@ nav .links_list li.translate_btn a:hover {
           animation-delay: 0s;
 }
 
-.home_sec .balon_overlay span.shape2 {
+.intro_sec .balon_overlay span.shape2 {
   width: 50px;
   height: 50px;
   left: 15%;
@@ -140,7 +148,7 @@ nav .links_list li.translate_btn a:hover {
           animation-delay: 1s;
 }
 
-.home_sec .balon_overlay span.shape3 {
+.intro_sec .balon_overlay span.shape3 {
   width: 120px;
   height: 120px;
   left: 30%;
@@ -155,7 +163,7 @@ nav .links_list li.translate_btn a:hover {
           animation-delay: 6;
 }
 
-.home_sec .balon_overlay span.shape4 {
+.intro_sec .balon_overlay span.shape4 {
   width: 80px;
   height: 80px;
   left: 40%;
@@ -170,7 +178,7 @@ nav .links_list li.translate_btn a:hover {
           animation-delay: 4s;
 }
 
-.home_sec .balon_overlay span.shape5 {
+.intro_sec .balon_overlay span.shape5 {
   width: 100px;
   height: 100px;
   left: 70%;
@@ -185,7 +193,7 @@ nav .links_list li.translate_btn a:hover {
           animation-delay: 5s;
 }
 
-.home_sec .balon_overlay span.shape6 {
+.intro_sec .balon_overlay span.shape6 {
   width: 70px;
   height: 70px;
   left: 90%;
@@ -200,7 +208,7 @@ nav .links_list li.translate_btn a:hover {
           animation-delay: 4.5s;
 }
 
-.home_sec .balon_overlay span.shape7 {
+.intro_sec .balon_overlay span.shape7 {
   width: 130px;
   height: 130px;
   left: 50%;
@@ -215,7 +223,7 @@ nav .links_list li.translate_btn a:hover {
           animation-delay: 2s;
 }
 
-.home_sec .balon_overlay span.shape8 {
+.intro_sec .balon_overlay span.shape8 {
   width: 90px;
   height: 90px;
   left: 35%;
@@ -230,7 +238,7 @@ nav .links_list li.translate_btn a:hover {
           animation-delay: 2.5s;
 }
 
-.home_sec .balon_overlay span.shape9 {
+.intro_sec .balon_overlay span.shape9 {
   width: 100px;
   height: 100px;
   left: 70%;
@@ -245,7 +253,7 @@ nav .links_list li.translate_btn a:hover {
           animation-delay: 3s;
 }
 
-.home_sec .balon_overlay span.shape10 {
+.intro_sec .balon_overlay span.shape10 {
   width: 100px;
   height: 100px;
   left: 20%;
@@ -262,15 +270,15 @@ nav .links_list li.translate_btn a:hover {
           animation-delay: 2s;
 }
 
-.home_sec .home_info {
+.intro_sec .intro_info {
   height: 100%;
 }
 
-.home_sec .home_info .container-fluid {
+.intro_sec .intro_info .container-fluid {
   height: 100%;
 }
 
-.home_sec .home_info .container-fluid .row {
+.intro_sec .intro_info .container-fluid .row {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,8 +291,35 @@ nav .links_list li.translate_btn a:hover {
           justify-content: center;
 }
 
-.home_sec .home_info .container-fluid .row .info_wraper h1 {
+.intro_sec .intro_info .container-fluid .row .info_header_wraper {
+  text-align: center;
+}
+
+.intro_sec .intro_info .container-fluid .row .info_header_wraper h1 {
+  display: inline-block;
+  font-size: 3.5rem;
   color: #fff;
+  margin-bottom: 0;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.intro_sec .intro_info .container-fluid .row .info_header_wraper .typed-cursor {
+  color: #fff;
+  font-size: 40px;
+}
+
+.intro_sec .intro_info .container-fluid .row .info_text_wraper {
+  width: 80%;
+  margin-top: 15px;
+}
+
+.intro_sec .intro_info .container-fluid .row .info_text_wraper p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.7;
+  word-spacing: 4px;
+  text-align: center;
 }
 
 @-webkit-keyframes balons {

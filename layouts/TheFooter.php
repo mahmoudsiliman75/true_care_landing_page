@@ -20,10 +20,6 @@
 <script src="assets/js/owl.carousel.min.js"></script>
 <!-- END:: INCLUDING OWL CAROUSEL SCRIPT FILE -->
 
-<!-- START:: INCLUDING SITE FONT -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&display=swap">
-<!-- END:: INCLUDING SITE FONT -->
-
 <!-- START:: INCLUDING BOOTSTRAP SELECT SCRIPT FILE -->
 <script src="assets/js/bootstrap-select.min.js"></script>
 <!-- END:: INCLUDING BOOTSTRAP SELECT SCRIPT FILE -->
@@ -31,6 +27,20 @@
 <!-- START:: INCLUDING WOW JS SCRIPT FILE -->
 <script src="assets/js/wow.min.js"></script>
 <!-- END:: INCLUDING WOW JS SCRIPT FILE -->
+
+<!-- START:: INCLUDING TYPED JS SCRIPT FILE -->
+<script src="assets/js/typed.js"></script>
+
+<script>
+new Typed('#element', {
+  strings: ["", "First sentence.", "Second sentence.", "Third sentence."],
+  typeSpeed: 100,
+  backSpeed: 50,
+  loop: true,
+  loopCount: Infinity,
+});
+</script>
+<!-- START:: INCLUDING TYPED JS SCRIPT FILE -->
 
 <!-- START:: INCLUDING MAIN SCRIPT FILE -->
 <script src="assets/js/main.js"></script>

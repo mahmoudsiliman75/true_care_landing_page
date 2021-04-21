@@ -47,7 +47,7 @@
 <body>
 
 <!-- START:: NAV BAR -->
-<nav>
+<nav id="custom_nav">
   <div class="logo">
     <a href="index.php">
       <span> True </span> Care

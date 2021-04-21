@@ -10,7 +10,7 @@
 body {
   font-family: 'Cairo', sans-serif;
   overflow-x: hidden;
-  // height: 20000px;
+  height: 20000px;
   &::-webkit-scrollbar {
     background-color: $lighterGrey;
     width: 5px;
@@ -30,9 +30,13 @@ nav {
   z-index: 999;
   @include flexCenterAlignment();
   justify-content: space-between;
-  padding: 15px;
+  padding: 20px;
   background-color: transparent;
-  // background-color: $deepPurple;
+  @include transitioning();
+  &.stiky {
+    padding: 8px;
+    background-color: $deepPurple;
+  }
 
   .logo {
     a {
@@ -82,7 +86,7 @@ nav {
 // END:: LARGE SCREENS NAV STYLES
 
 // START:: HOME SECTION STYLES
-.home_sec {
+.intro_sec {
   height: 100vh;
   background-color: $midPurple;
   position: relative;
@@ -208,20 +212,37 @@ nav {
     }
   }
 
-  .home_info {
+  .intro_info {
     height: 100%;
     .container-fluid {
       height: 100%;
       .row {
         height: 100%;
         @include flexCenterAlignment();
-        // .mockup_wraper {
-
-        // }
-
-        .info_wraper {
+        .info_header_wraper {
+          text-align: center;
           h1 {
+            display: inline-block;
+            font-size: 3.5rem;
             color: $white;
+            margin-bottom: 0;
+            margin-inline-end: 10px;
+          }
+          .typed-cursor {
+            color: $white;
+            font-size: 40px;
+          }
+        }
+
+        .info_text_wraper {
+          width: 80%;
+          margin-top: 15px;
+          p {
+            color: $white;
+            font-size: 20px;
+            line-height: 1.7;
+            word-spacing: 4px;
+            text-align: center;
           }
         }
       }
@@ -241,3 +262,9 @@ nav {
   }
 }
 // END:: HOME SECTION STYLES
+
+// START:: ABOUT SECTION STYLES
+.about_sec {
+
+}
+// END:: ABOUT SECTION STYLES
