@@ -94,9 +94,22 @@
 }
 
 @mixin mainHeaderStyle {
-  color: $deepBlue;
-  border-left: 3px solid $lightCoffee;
-  padding: 8px;
+  position: relative;
+  color: $deepPurple;
+  font-size: 2.5rem;
+  font-weight: 600;
+  &:after {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: $lightPurple;
+    @include midShadow();
+  }
 }
 
 @mixin flexCenterAlignment {

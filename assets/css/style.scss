@@ -8,9 +8,11 @@
 
 // START:: GLOBAL STYLES
 body {
+  scroll-behavior: smooth;
   font-family: 'Cairo', sans-serif;
   overflow-x: hidden;
   height: 20000px;
+
   &::-webkit-scrollbar {
     background-color: $lighterGrey;
     width: 5px;
@@ -347,6 +349,50 @@ nav {
 }
 // END:: ABOUT SECTION STYLES
 .applications_sec {
-  
+  padding: $paddingAmount 0;
+  .header_wraper {
+    @include flexCenterAlignment();
+    h2 {
+      @include mainHeaderStyle();
+    }
+  }
+
+  .app_card {
+    text-decoration: none;
+    display: block;
+    min-height: 300px;
+    @include flexCenterAlignment();
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    @include midShadow();
+    background-size: 100% !important;
+    background-position: bottom !important;
+    background-repeat: no-repeat !important;
+
+    .img_wraper {
+      min-height: 100px;
+      max-height: 100px;
+      min-width: 100px;
+      max-width: 100px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .info_wraper {
+      h4 {
+        margin-block: 8px;
+        color: $deepPurple;
+      }
+      .text {
+        color: $lightGrey;
+        font-size: 18px;
+        line-height: 1.6;
+        word-break: break-word;
+      }
+    }
+  }
 }
 // START:: APPLICATIONS SECTION

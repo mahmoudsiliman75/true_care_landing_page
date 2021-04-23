@@ -49,7 +49,7 @@
   <!-- END:: HOME SECTION -->
 
   <!-- START:: ABOUT SECTION -->
-  <div class="about_sec">
+  <div id="about_sec" class="about_sec">
     <div class="container-fluid">
       <div class="row align-items-center">
         <div class="col-12 col-lg-6 mb-4">
@@ -144,10 +144,42 @@
   <!-- END:: ABOUT SECTION -->
 
   <!-- START:: APPLICATIONS SECTION -->
-  <div class="applications_sec">
+  <div id="apps_sec" class="applications_sec">
     <div class="container">
-      <div class="header_wraper">
+      <div class="header_wraper mb-5">
         <h2> Applications </h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-4 my-3">
+          <a href="#" class="app_card" style="background: url('assets/media/pricing-bottom-bg.png');">
+            <div class="img_wraper">
+              <img src="assets/media/icons/logo.png" alt="">
+            </div>
+
+            <div class="info_wraper">
+              <h4> Coasmatics </h4>
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-4 my-3">
+          <a href="#" class="app_card" style="background: url('assets/media/pricing-bottom-bg.png');">
+            <div class="img_wraper">
+              <img src="assets/media/icons/logo.png" alt="">
+            </div>
+
+            <div class="info_wraper">
+              <h4> U Care </h4>
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>

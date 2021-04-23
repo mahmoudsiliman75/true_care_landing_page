@@ -1,4 +1,5 @@
 body {
+  scroll-behavior: smooth;
   font-family: 'Cairo', sans-serif;
   overflow-x: hidden;
   height: 20000px;
@@ -418,6 +419,93 @@ nav .links_list li.translate_btn a:hover {
 .about_sec .cards_wraper .card .card_details > div {
   color: #666;
   font-size: 16px;
+  word-break: break-word;
+}
+
+.applications_sec {
+  padding: 50px 0;
+}
+
+.applications_sec .header_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.applications_sec .header_wraper h2 {
+  position: relative;
+  color: #150f25;
+  font-size: 2.5rem;
+}
+
+.applications_sec .header_wraper h2:after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: #7D4196;
+  -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+          box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+}
+
+.applications_sec .app_card {
+  text-decoration: none;
+  display: block;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+          box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+  background-size: 100% !important;
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+}
+
+.applications_sec .app_card .img_wraper {
+  min-height: 100px;
+  max-height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.applications_sec .app_card .img_wraper img {
+  width: 100%;
+  height: 100%;
+}
+
+.applications_sec .app_card .info_wraper h4 {
+  margin-block: 8px;
+  color: #150f25;
+}
+
+.applications_sec .app_card .info_wraper .text {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
   word-break: break-word;
 }
 /*# sourceMappingURL=style.css.map */
