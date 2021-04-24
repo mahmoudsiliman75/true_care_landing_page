@@ -155,7 +155,7 @@
 
       <div class="row justify-content-center">
         <div class="col-12 col-md-4 my-3">
-          <a href="#" class="app_card" style="background: url('assets/media/pricing-bottom-bg.png');">
+          <a href="#" class="app_card">
             <div class="img_wraper">
               <img src="assets/media/icons/logo.png" alt="">
             </div>
@@ -170,7 +170,7 @@
         </div>
 
         <div class="col-12 col-md-4 my-3">
-          <a href="#" class="app_card" style="background: url('assets/media/pricing-bottom-bg.png');">
+          <a href="#" class="app_card">
             <div class="img_wraper">
               <img src="assets/media/icons/logo.png" alt="">
             </div>
@@ -187,6 +187,97 @@
     </div>
   </div>
   <!-- END:: APPLICATIONS SECTION -->
+
+  <!-- START:: FAQS SECTION -->
+  <div id="faqs_sec" class="faqs_sec">
+    <div class="container">
+      <div class="header_wraper">
+        <h2> FAQs </h2>
+      </div>
+
+      <div class="row justify-content-center">
+
+        <div class="col-12 col-md-6 my-3">
+          <div class="accordion_wraper">
+            <div class="accordion" id="faqs_accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h4 class="mb-0">
+                    <button class="btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Question #1
+                    </button>
+                  </h4>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqs_accordion">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veritatis, numquam? Quisquam laborum maiores repellat, 
+                    natus aut quaerat commodi accusamus sint numquam recusandae 
+                    rerum fuga cupiditate corporis possimus mollitia unde facere.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 my-3">
+          <div class="accordion_wraper">
+            <div class="accordion" id="faqs_accordion">
+
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h4 class="mb-0">
+                    <button class="btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Question #2
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqs_accordion">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veritatis, numquam? Quisquam laborum maiores repellat, 
+                    natus aut quaerat commodi accusamus sint numquam recusandae 
+                    rerum fuga cupiditate corporis possimus mollitia unde facere.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 my-3">
+          <div class="accordion_wraper">
+            <div class="accordion" id="faqs_accordion">
+
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h4 class="mb-0">
+                    <button class="btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Question #3
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqs_accordion">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veritatis, numquam? Quisquam laborum maiores repellat, 
+                    natus aut quaerat commodi accusamus sint numquam recusandae 
+                    rerum fuga cupiditate corporis possimus mollitia unde facere.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- END:: FAQS SECTION -->
 
   <!-- START:: CONTACT US SECTION -->
   <div id="contact_sec" class="contact_us">
@@ -215,6 +306,11 @@
               <div class="form-group my-4">
                 <i class="fas fa-mobile-alt fa-2x"></i>
                 <input type="text" class="form-control" name="phone" placeholder="Your Phone Number">
+              </div>
+
+              <div class="form-group my-4">
+                <i class="fas fa-bookmark fa-2x"></i>
+                <textarea class="form-control" rows="6" placeholder="Your Message"></textarea>
               </div>
 
               <div class="btn_wraper my-4">

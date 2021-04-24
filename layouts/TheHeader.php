@@ -58,6 +58,8 @@
     <li> <a href="index.php#intro_sec" class="active"> Home </a> </li>
     <li> <a href="index.php#about_sec"> About </a> </li>
     <li> <a href="index.php#apps_sec"> Appliations </a> </li>
+    <li> <a href="index.php#faqs_sec"> FAQs </a> </li>
+    <li> <a href="index.php#clients_sec"> Our Clients </a> </li>
     <li> <a href="index.php#contact_sec"> Contact Us </a> </li>
 
     <!-- START:: TRANSLATION BTN -->

@@ -9,19 +9,18 @@
 // START:: GLOBAL STYLES
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Cairo', sans-serif;
-  overflow-x: hidden;
-  height: 20000px;
-
-  &::-webkit-scrollbar {
-    background-color: $lighterGrey;
-    width: 5px;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: $midPurple;
+  body {
+    font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
+    height: 20000px;
+  
+    &::-webkit-scrollbar {
+      background-color: $lighterGrey;
+      width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $midPurple;
+    }
   }
 }
 // END:: GLOBAL STYLES
@@ -352,7 +351,7 @@ nav {
 }
 // END:: ABOUT SECTION STYLES
 
-// START:: APPLICATIONS SECTION
+// START:: APPLICATIONS SECTION STYLES
 .applications_sec {
   padding: $paddingAmount 0;
   .header_wraper {
@@ -380,6 +379,7 @@ nav {
     text-align: center;
     padding: 20px;
     @include midShadow();
+    background-image: url('../media/pricing-bottom-bg.png');
     background-size: 100% !important;
     background-position: bottom !important;
     background-repeat: no-repeat !important;
@@ -409,7 +409,46 @@ nav {
     }
   }
 }
-// END:: APPLICATIONS SECTION
+// END:: APPLICATIONS SECTION STYLES
+
+// START:: FAQS SECTION STYLES
+.faqs_sec {
+  padding: $paddingAmount 0;
+  .header_wraper {
+    @include flexCenterAlignment();
+    h2 {
+      @include mainHeaderStyle();
+    }
+  }
+
+  .accordion_wraper {
+    .accordion {
+      @include midShadow();
+      .card {
+        .card-header {
+          background-image: linear-gradient(to right, $midPurple, $pink);
+          button {
+            text-decoration: none;
+            border: none;
+            background-color: transparent;
+            color: $white;
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+
+        .card-body {
+          font-size: 18px;
+          line-height: 1.6;
+          color: $lightGrey;
+          word-break: break-word;
+        }
+      }
+    }
+  }
+}
+// END:: FAQS SECTION STYLES
 
 // START:: CONTACT US SECTION STYLES
 .contact_us {
@@ -443,7 +482,8 @@ nav {
       @include midShadow();
       @include borderRadius($borderRadiusAmount);
 
-      input {
+      input, 
+      textarea {
         border: none;
         &:focus {
           box-shadow: none;
