@@ -105,34 +105,34 @@ $(document).ready( function() {
 //     }
 //   });
 
-//   $('#clients').owlCarousel({
-//     loop:true,
-//     autoplay:true,
-//     autoplayTimeout:6000,
-//     autoplayHoverPause:true,
-//     margin:10,
-//     nav: false,
-//     dots: false,
-//     items:1,
-//     rtl: true, 
-//     responsive:{
-//       0:{
-//         items:2,
-//         nav:false,
-//         loop:true
-//       },
-//       600:{
-//         items:4,
-//         nav:false,
-//         loop:true
-//       },
-//       1000:{
-//         items:6,
-//         nav:false,
-//         loop:true
-//       }
-//     }
-//   });
+  $('#clients').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:6000,
+    autoplayHoverPause:true,
+    margin:10,
+    nav: false,
+    dots: false,
+    items:1,
+    rtl: true, 
+    responsive:{
+      0:{
+        items:2,
+        nav:false,
+        loop:true
+      },
+      600:{
+        items:4,
+        nav:false,
+        loop:true
+      },
+      1000:{
+        items:6,
+        nav:false,
+        loop:true
+      }
+    }
+  });
 
 //   $('#awards').owlCarousel({
 //     loop:true,

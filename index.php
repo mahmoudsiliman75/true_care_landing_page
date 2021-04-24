@@ -191,7 +191,7 @@
   <!-- START:: FAQS SECTION -->
   <div id="faqs_sec" class="faqs_sec">
     <div class="container">
-      <div class="header_wraper">
+      <div class="header_wraper mb-4">
         <h2> FAQs </h2>
       </div>
 
@@ -274,10 +274,101 @@
           </div>
         </div>
 
+        <div class="col-12 col-md-6 my-3">
+          <div class="accordion_wraper">
+            <div class="accordion" id="faqs_accordion">
+
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h4 class="mb-0">
+                    <button class="btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Question #4
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqs_accordion">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veritatis, numquam? Quisquam laborum maiores repellat, 
+                    natus aut quaerat commodi accusamus sint numquam recusandae 
+                    rerum fuga cupiditate corporis possimus mollitia unde facere.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
   <!-- END:: FAQS SECTION -->
+
+  <!-- START:: OUR CLIENTS SECTION -->
+  <div id="clients_sec" class="clients_sec">
+    <div class="container-fluid">
+      <div class="header_wraper mb-4">
+        <h2> Our Success Partners </h2>
+      </div>
+
+      <div class="row flex-column align-items-center justify-content-center mt-3 overflow-hidden">
+        <div id="clients" class="owl-carousel owl-theme col-11">
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/clients/prand1.png" alt="client"> 
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/clients/prand2.png" alt="client"> 
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/clients/prand4.png" alt="client"> 
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/clients/prand3.png" alt="client"> 
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/clients/prand5.jpg" alt="client">
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/clients/prand1.png" alt="client"> 
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/clients/prand2.png" alt="client"> 
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/clients/prand4.png" alt="client"> 
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END:: OUR CLIENTS SECTION -->
 
   <!-- START:: CONTACT US SECTION -->
   <div id="contact_sec" class="contact_us">

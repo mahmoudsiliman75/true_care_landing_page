@@ -427,6 +427,9 @@ nav .links_list li.translate_btn a:hover {
 
 .applications_sec {
   padding: 50px 0;
+  background: url("../media/striples-bg.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .applications_sec .header_wraper {
@@ -594,6 +597,68 @@ nav .links_list li.translate_btn a:hover {
   word-break: break-word;
 }
 
+.clients_sec {
+  padding: 50px 0;
+}
+
+.clients_sec .header_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients_sec .header_wraper h2 {
+  position: relative;
+  color: #150f25;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.clients_sec .header_wraper h2:after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: #7D4196;
+  -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+          box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+}
+
+.clients_sec .owl-carousel {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients_sec .owl-carousel .item .img_wraper {
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.clients_sec .owl-carousel .item .img_wraper img {
+  width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+}
+
 .contact_us {
   background: url("../media/header-sape6.png");
   background-repeat: no-repeat;
@@ -682,6 +747,13 @@ nav .links_list li.translate_btn a:hover {
 .contact_us .form_wraper .form-group svg {
   color: #f869ac;
   opacity: 0.5;
+}
+
+.contact_us .form_wraper .form-group:nth-child(4) {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 15px;
 }
 
 .contact_us .form_wraper .btn_wraper {

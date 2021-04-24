@@ -354,6 +354,9 @@ nav {
 // START:: APPLICATIONS SECTION STYLES
 .applications_sec {
   padding: $paddingAmount 0;
+  background: url('../media/striples-bg.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
   .header_wraper {
     @include flexCenterAlignment();
     flex-direction: column;
@@ -450,6 +453,37 @@ nav {
 }
 // END:: FAQS SECTION STYLES
 
+// START:: CLIENTS SECTION STYLES
+.clients_sec {
+  padding: $paddingAmount 0;
+
+  .header_wraper {
+    @include flexCenterAlignment();
+    h2 {
+      @include mainHeaderStyle();
+    }
+  }
+
+  .owl-carousel {
+    position: relative;
+    @include flexCenterAlignment();
+
+    .item {
+      .img_wraper {
+        min-height: 150px;
+        max-height: 150px;
+        img {
+          width: 100%;
+          min-height: 150px;
+          max-height: 150px;
+        }
+      }
+
+    }
+  }
+}
+// END:: CLIENTS SECTION STYLES
+
 // START:: CONTACT US SECTION STYLES
 .contact_us {
   background: url('../media/header-sape6.png');
@@ -495,6 +529,11 @@ nav {
       svg {
         color: #f869ac;
         opacity: 0.5;
+      }
+
+      &:nth-child(4) {
+        align-items: flex-start;
+        padding-top: 15px;
       }
     }
 
