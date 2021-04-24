@@ -323,13 +323,13 @@
 
           <div class="item text-center">
             <div class="img_wraper">
-              <img src="assets/media/clients/prand2.png" alt="client"> 
+              <img src="assets/media/clients/prand2.jpg" alt="client"> 
             </div>
           </div>
 
           <div class="item text-center">
             <div class="img_wraper">
-              <img src="assets/media/clients/prand4.png" alt="client"> 
+              <img src="assets/media/clients/prand4.jpg" alt="client"> 
             </div>
           </div>
 
@@ -353,13 +353,13 @@
 
           <div class="item text-center">
             <div class="img_wraper">
-              <img src="assets/media/clients/prand2.png" alt="client"> 
+              <img src="assets/media/clients/prand2.jpg" alt="client"> 
             </div>
           </div>
 
           <div class="item text-center">
             <div class="img_wraper">
-              <img src="assets/media/clients/prand4.png" alt="client"> 
+              <img src="assets/media/clients/prand4.jpg" alt="client"> 
             </div>
           </div>
 

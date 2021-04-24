@@ -12,7 +12,7 @@ html {
   body {
     font-family: 'Cairo', sans-serif;
     overflow-x: hidden;
-    height: 20000px;
+    // height: 20000px;
   
     &::-webkit-scrollbar {
       background-color: $lighterGrey;
@@ -25,10 +25,81 @@ html {
 }
 // END:: GLOBAL STYLES
 
+// START:: UPPER BAR STYLES
+.upper_bar {
+  padding: 8px;
+  background-color: rgba(225, 225, 225, 0.5);
+  .hint_wraper {
+    p {
+      color: $deepBlue;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .info_icons {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include flexCenterAlignment();
+      li {
+        @include flexCenterAlignment();
+        margin-inline: 15px;
+        a {
+          text-decoration: none;
+          color: $deepBlue;
+          font-size: 18px;
+          @include transitioning();
+          &:hover {
+            color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+
+  .social_icons {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include flexCenterAlignment();
+      li {
+        @include flexCenterAlignment();
+        margin-inline: 5px;
+        width: 40px;
+        height: 40px;
+        @include borderRadius($borderRadiusAmount);
+        @include transitioning();
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+
+  .btn_wraper {
+    @include flexCenterAlignment();
+    button {
+      @include btnStyle();
+    }
+  }
+}
+// END:: UPPER BAR STYLES
+
 // START:: LARGE SCREENS NAV STYLES
 nav {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 60px;
   left: 0;
   right: 0;
   z-index: 999;
@@ -38,6 +109,10 @@ nav {
   background-color: transparent;
   @include transitioning();
   &.stiky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 8px;
     background-color: $deepBlue;
   }
@@ -91,7 +166,7 @@ nav {
 
 // START:: HOME SECTION STYLES
 .intro_sec {
-  height: 100vh;
+  height: calc(100vh - 60px);
   background-image: linear-gradient(to right, $deepBlue, $mainColor);
   position: relative;
   overflow: hidden;
@@ -542,14 +617,7 @@ nav {
       width: 100%;
       @include flexCenterAlignment();
       button {
-        border: none;
-        background-image: linear-gradient(to right, $deepBlue, $mainColor);
-        color: $white;
-        padding: 10px 20px;
-        @include borderRadius($borderRadiusAmount);
-        &:hover {
-          background-image: linear-gradient(to left, $deepBlue, $mainColor);
-        }
+        @include btnStyle();
       }
     }
   }
