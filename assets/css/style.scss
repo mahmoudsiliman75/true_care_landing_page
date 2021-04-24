@@ -7,8 +7,11 @@
 // END:: MIXINS
 
 // START:: GLOBAL STYLES
-body {
+html {
   scroll-behavior: smooth;
+}
+
+body {
   font-family: 'Cairo', sans-serif;
   overflow-x: hidden;
   height: 20000px;
@@ -348,12 +351,23 @@ nav {
   }
 }
 // END:: ABOUT SECTION STYLES
+
+// START:: APPLICATIONS SECTION
 .applications_sec {
   padding: $paddingAmount 0;
   .header_wraper {
     @include flexCenterAlignment();
+    flex-direction: column;
     h2 {
       @include mainHeaderStyle();
+    }
+    .text {
+      font-size: 20px;
+      color: $lightGrey;
+      word-break: break-word;
+      margin-top: 15px;
+      word-spacing: 3px;
+      text-align: center;
     }
   }
 
@@ -395,4 +409,70 @@ nav {
     }
   }
 }
-// START:: APPLICATIONS SECTION
+// END:: APPLICATIONS SECTION
+
+// START:: CONTACT US SECTION STYLES
+.contact_us {
+  background: url('../media/header-sape6.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: $paddingAmount 0;
+  .header_wraper {
+    @include flexCenterAlignment();
+    flex-direction: column;
+    h2 {
+      @include mainHeaderStyle();
+    }
+    .text {
+      font-size: 20px;
+      color: $lightGrey;
+      word-break: break-word;
+      margin-top: 15px;
+      word-spacing: 3px;
+      text-align: center;
+    }
+  }
+
+  .form_wraper {
+    margin-top: 25px;
+    .form-group {
+      padding: 5px 10px;
+      margin-block: 10px;
+      display: flex;
+      align-items: center;
+      @include midShadow();
+      @include borderRadius($borderRadiusAmount);
+
+      input {
+        border: none;
+        &:focus {
+          box-shadow: none;
+          border: none;
+          outline: none;
+        }
+      }
+
+      svg {
+        color: #f869ac;
+        opacity: 0.5;
+      }
+    }
+
+    .btn_wraper {
+      width: 100%;
+      @include flexCenterAlignment();
+      button {
+        border: none;
+        background-image: linear-gradient(to right, $midPurple, $pink);
+        color: $white;
+        padding: 10px 20px;
+        @include borderRadius($borderRadiusAmount);
+        &:hover {
+          background-image: linear-gradient(to left, $midPurple, $pink);
+        }
+      }
+    }
+  }
+}
+// END:: CONTACT US SECTION STYLES
+

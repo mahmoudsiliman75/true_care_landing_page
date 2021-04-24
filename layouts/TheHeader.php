@@ -55,7 +55,7 @@
   </div>
 
   <ul class="links_list">
-    <li> <a href="index.php#home_sec" class="active"> Home </a> </li>
+    <li> <a href="index.php#intro_sec" class="active"> Home </a> </li>
     <li> <a href="index.php#about_sec"> About </a> </li>
     <li> <a href="index.php#apps_sec"> Appliations </a> </li>
     <li> <a href="index.php#contact_sec"> Contact Us </a> </li>

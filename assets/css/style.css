@@ -1,5 +1,8 @@
-body {
+html {
   scroll-behavior: smooth;
+}
+
+body {
   font-family: 'Cairo', sans-serif;
   overflow-x: hidden;
   height: 20000px;
@@ -436,12 +439,17 @@ nav .links_list li.translate_btn a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .applications_sec .header_wraper h2 {
   position: relative;
   color: #150f25;
   font-size: 2.5rem;
+  font-weight: 600;
 }
 
 .applications_sec .header_wraper h2:after {
@@ -457,6 +465,15 @@ nav .links_list li.translate_btn a:hover {
   background-color: #7D4196;
   -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
           box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+}
+
+.applications_sec .header_wraper .text {
+  font-size: 20px;
+  color: #666;
+  word-break: break-word;
+  margin-top: 15px;
+  word-spacing: 3px;
+  text-align: center;
 }
 
 .applications_sec .app_card {
@@ -507,5 +524,120 @@ nav .links_list li.translate_btn a:hover {
   font-size: 18px;
   line-height: 1.6;
   word-break: break-word;
+}
+
+.contact_us {
+  background: url("../media/header-sape6.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 50px 0;
+}
+
+.contact_us .header_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact_us .header_wraper h2 {
+  position: relative;
+  color: #150f25;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.contact_us .header_wraper h2:after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: #7D4196;
+  -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+          box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+}
+
+.contact_us .header_wraper .text {
+  font-size: 20px;
+  color: #666;
+  word-break: break-word;
+  margin-top: 15px;
+  word-spacing: 3px;
+  text-align: center;
+}
+
+.contact_us .form_wraper {
+  margin-top: 25px;
+}
+
+.contact_us .form_wraper .form-group {
+  padding: 5px 10px;
+  margin-block: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+          box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+  border-radius: 10px;
+}
+
+.contact_us .form_wraper .form-group input {
+  border: none;
+}
+
+.contact_us .form_wraper .form-group input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.contact_us .form_wraper .form-group svg {
+  color: #f869ac;
+  opacity: 0.5;
+}
+
+.contact_us .form_wraper .btn_wraper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact_us .form_wraper .btn_wraper button {
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#271a4a), to(#FF449C));
+  background-image: linear-gradient(to right, #271a4a, #FF449C);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.contact_us .form_wraper .btn_wraper button:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#271a4a), to(#FF449C));
+  background-image: linear-gradient(to left, #271a4a, #FF449C);
 }
 /*# sourceMappingURL=style.css.map */

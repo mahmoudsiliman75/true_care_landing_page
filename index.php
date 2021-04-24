@@ -148,6 +148,9 @@
     <div class="container">
       <div class="header_wraper mb-5">
         <h2> Applications </h2>
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
       </div>
 
       <div class="row justify-content-center">
@@ -184,6 +187,46 @@
     </div>
   </div>
   <!-- END:: APPLICATIONS SECTION -->
+
+  <!-- START:: CONTACT US SECTION -->
+  <div id="contact_sec" class="contact_us">
+    <div class="container">
+      <div class="header_wraper">
+        <h2> Contact Us </h2>
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <div class="form_wraper">
+            <form action="">
+              <div class="form-group my-4">
+                <i class="fas fa-user-circle fa-2x"></i>
+                <input type="text" class="form-control" name="name" placeholder="Your Name">
+              </div>
+
+              <div class="form-group my-4">
+                <i class="fas fa-at fa-2x"></i>
+                <input type="email" class="form-control" name="email" placeholder="Your Email">
+              </div>
+
+              <div class="form-group my-4">
+                <i class="fas fa-mobile-alt fa-2x"></i>
+                <input type="text" class="form-control" name="phone" placeholder="Your Phone Number">
+              </div>
+
+              <div class="btn_wraper my-4">
+                <button type="button"> Send </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END:: CONTACT US SECTION -->
 
 <!-- START:: INCLUDING THE FOOTER -->
 <?php include('layouts/TheFooter.php')?>
