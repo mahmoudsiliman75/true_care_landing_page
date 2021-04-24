@@ -95,7 +95,7 @@
 
 @mixin mainHeaderStyle {
   position: relative;
-  color: $deepPurple;
+  color: $deepBlue;
   font-size: 2.5rem;
   font-weight: 600;
   &:after {
@@ -107,7 +107,7 @@
     bottom: -5px;
     left: 50%;
     transform: translate(-50%);
-    background-color: $lightPurple;
+    background-color: #79dca570;
     @include midShadow();
   }
 }

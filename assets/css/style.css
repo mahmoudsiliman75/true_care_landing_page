@@ -14,7 +14,7 @@ html body::-webkit-scrollbar {
 }
 
 html body::-webkit-scrollbar-thumb {
-  background-color: #271a4a;
+  background-color: #27AAE2;
 }
 
 nav {
@@ -43,19 +43,19 @@ nav {
 
 nav.stiky {
   padding: 8px;
-  background-color: #150f25;
+  background-color: #00303f;
 }
 
 nav .logo a {
   text-decoration: none;
-  color: #FF449C;
+  color: #fff;
   font-family: 'Lobster', cursive;
   font-size: 33px;
 }
 
 nav .logo a span {
   font-weight: 600;
-  color: #7D4196;
+  color: #79f9cd;
 }
 
 nav .links_list {
@@ -79,7 +79,7 @@ nav .links_list li a {
 }
 
 nav .links_list li a.active, nav .links_list li a:hover {
-  color: #FF449C;
+  color: #79f9cd;
 }
 
 nav .links_list li.translate_btn {
@@ -88,7 +88,7 @@ nav .links_list li.translate_btn {
 }
 
 nav .links_list li.translate_btn a {
-  color: #FF449C;
+  color: #79f9cd;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -99,7 +99,8 @@ nav .links_list li.translate_btn a:hover {
 
 .intro_sec {
   height: 100vh;
-  background-color: #271a4a;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00303f), to(#27AAE2));
+  background-image: linear-gradient(to right, #00303f, #27AAE2);
   position: relative;
   overflow: hidden;
 }
@@ -364,12 +365,12 @@ nav .links_list li.translate_btn a:hover {
 }
 
 .about_sec .about_content_wraper h2 span {
-  color: #FF449C;
+  color: #27AAE2;
   font-family: 'Lobster', cursive;
 }
 
 .about_sec .about_content_wraper h2 span span {
-  color: #7D4196;
+  color: #79f9cd;
 }
 
 .about_sec .about_content_wraper .text {
@@ -400,7 +401,7 @@ nav .links_list li.translate_btn a:hover {
   max-height: 260px;
   border-radius: 0;
   border: none;
-  border-bottom: 2px solid #271a4a;
+  border-bottom: 2px solid #27AAE2;
   text-align: center;
   padding: 15px;
   -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
@@ -450,7 +451,7 @@ nav .links_list li.translate_btn a:hover {
 
 .applications_sec .header_wraper h2 {
   position: relative;
-  color: #150f25;
+  color: #00303f;
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -465,7 +466,7 @@ nav .links_list li.translate_btn a:hover {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  background-color: #7D4196;
+  background-color: #79dca570;
   -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
           box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
 }
@@ -500,7 +501,7 @@ nav .links_list li.translate_btn a:hover {
   padding: 20px;
   -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
           box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
-  background-image: url("../media/pricing-bottom-bg.png");
+  background-image: url("../media/watercolor.jpg");
   background-size: 100% !important;
   background-position: bottom !important;
   background-repeat: no-repeat !important;
@@ -548,7 +549,7 @@ nav .links_list li.translate_btn a:hover {
 
 .faqs_sec .header_wraper h2 {
   position: relative;
-  color: #150f25;
+  color: #00303f;
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -563,7 +564,7 @@ nav .links_list li.translate_btn a:hover {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  background-color: #7D4196;
+  background-color: #79dca570;
   -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
           box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
 }
@@ -574,8 +575,8 @@ nav .links_list li.translate_btn a:hover {
 }
 
 .faqs_sec .accordion_wraper .accordion .card .card-header {
-  background-image: -webkit-gradient(linear, left top, right top, from(#271a4a), to(#FF449C));
-  background-image: linear-gradient(to right, #271a4a, #FF449C);
+  background-image: -webkit-gradient(linear, left top, right top, from(#00303f), to(#27AAE2));
+  background-image: linear-gradient(to right, #00303f, #27AAE2);
 }
 
 .faqs_sec .accordion_wraper .accordion .card .card-header button {
@@ -615,7 +616,7 @@ nav .links_list li.translate_btn a:hover {
 
 .clients_sec .header_wraper h2 {
   position: relative;
-  color: #150f25;
+  color: #00303f;
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -630,7 +631,7 @@ nav .links_list li.translate_btn a:hover {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  background-color: #7D4196;
+  background-color: #79dca570;
   -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
           box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
 }
@@ -684,7 +685,7 @@ nav .links_list li.translate_btn a:hover {
 
 .contact_us .header_wraper h2 {
   position: relative;
-  color: #150f25;
+  color: #00303f;
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -699,7 +700,7 @@ nav .links_list li.translate_btn a:hover {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  background-color: #7D4196;
+  background-color: #79dca570;
   -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
           box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
 }
@@ -745,8 +746,8 @@ nav .links_list li.translate_btn a:hover {
 }
 
 .contact_us .form_wraper .form-group svg {
-  color: #f869ac;
-  opacity: 0.5;
+  color: #27AAE2;
+  opacity: 0.7;
 }
 
 .contact_us .form_wraper .form-group:nth-child(4) {
@@ -771,15 +772,15 @@ nav .links_list li.translate_btn a:hover {
 
 .contact_us .form_wraper .btn_wraper button {
   border: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#271a4a), to(#FF449C));
-  background-image: linear-gradient(to right, #271a4a, #FF449C);
+  background-image: -webkit-gradient(linear, left top, right top, from(#00303f), to(#27AAE2));
+  background-image: linear-gradient(to right, #00303f, #27AAE2);
   color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
 }
 
 .contact_us .form_wraper .btn_wraper button:hover {
-  background-image: -webkit-gradient(linear, right top, left top, from(#271a4a), to(#FF449C));
-  background-image: linear-gradient(to left, #271a4a, #FF449C);
+  background-image: -webkit-gradient(linear, right top, left top, from(#00303f), to(#27AAE2));
+  background-image: linear-gradient(to left, #00303f, #27AAE2);
 }
 /*# sourceMappingURL=style.css.map */

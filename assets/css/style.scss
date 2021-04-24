@@ -7,7 +7,7 @@
 // END:: MIXINS
 
 // START:: GLOBAL STYLES
-html {
+html {  
   scroll-behavior: smooth;
   body {
     font-family: 'Cairo', sans-serif;
@@ -19,7 +19,7 @@ html {
       width: 5px;
     }
     &::-webkit-scrollbar-thumb {
-      background-color: $midPurple;
+      background-color: $mainColor;
     }
   }
 }
@@ -39,18 +39,18 @@ nav {
   @include transitioning();
   &.stiky {
     padding: 8px;
-    background-color: $deepPurple;
+    background-color: $deepBlue;
   }
 
   .logo {
     a {
       text-decoration: none;
-      color: $pink;
+      color: $white;
       font-family: 'Lobster', cursive;
       font-size: 33px;
       span {
         font-weight: 600;
-        color: $lightPurple;
+        color: $secondaryColor;
       }
     }
   }
@@ -70,14 +70,14 @@ nav {
         @include transitioning();
         &.active, 
         &:hover {
-          color: $pink;
+          color: $secondaryColor;
         }
       }
 
       &.translate_btn {
         margin-inline-start: 30px;
         a {
-          color: $pink;
+          color: $secondaryColor;
           @include transitioning();
           &:hover {
             color: $white;
@@ -92,7 +92,7 @@ nav {
 // START:: HOME SECTION STYLES
 .intro_sec {
   height: 100vh;
-  background-color: $midPurple;
+  background-image: linear-gradient(to right, $deepBlue, $mainColor);
   position: relative;
   overflow: hidden;
 
@@ -275,10 +275,10 @@ nav {
       font-size: 3rem;
       color: $lightGrey;
       span {
-        color: $pink;
+        color: $mainColor;
         font-family: 'Lobster', cursive;
         span {
-          color: $lightPurple;
+          color: $secondaryColor;
         }
       }
     }
@@ -321,7 +321,7 @@ nav {
       max-height: 260px;
       @include borderRadius(0);
       border: none;
-      border-bottom: 2px solid $midPurple;
+      border-bottom: 2px solid $mainColor;
       text-align: center;
       padding: 15px;
       @include midShadow();
@@ -382,7 +382,7 @@ nav {
     text-align: center;
     padding: 20px;
     @include midShadow();
-    background-image: url('../media/pricing-bottom-bg.png');
+    background-image: url('../media/watercolor.jpg');
     background-size: 100% !important;
     background-position: bottom !important;
     background-repeat: no-repeat !important;
@@ -429,7 +429,8 @@ nav {
       @include midShadow();
       .card {
         .card-header {
-          background-image: linear-gradient(to right, $midPurple, $pink);
+          // background-image: linear-gradient(to right, $mainColor, $secondaryColor, #A5FECB);
+          background-image: linear-gradient(to right, $deepBlue, $mainColor);
           button {
             text-decoration: none;
             border: none;
@@ -527,8 +528,8 @@ nav {
       }
 
       svg {
-        color: #f869ac;
-        opacity: 0.5;
+        color: $mainColor;
+        opacity: 0.7;
       }
 
       &:nth-child(4) {
@@ -542,12 +543,12 @@ nav {
       @include flexCenterAlignment();
       button {
         border: none;
-        background-image: linear-gradient(to right, $midPurple, $pink);
+        background-image: linear-gradient(to right, $deepBlue, $mainColor);
         color: $white;
         padding: 10px 20px;
         @include borderRadius($borderRadiusAmount);
         &:hover {
-          background-image: linear-gradient(to left, $midPurple, $pink);
+          background-image: linear-gradient(to left, $deepBlue, $mainColor);
         }
       }
     }
