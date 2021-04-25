@@ -6,6 +6,8 @@
 @import 'mixins.scss';
 // END:: MIXINS
 
+@import 'wizard-style.scss';
+
 // START:: GLOBAL STYLES
 html {  
   scroll-behavior: smooth;
@@ -89,7 +91,8 @@ html {
 
   .btn_wraper {
     @include flexCenterAlignment();
-    button {
+    a {
+      text-decoration: none;
       @include btnStyle();
     }
   }
@@ -115,6 +118,14 @@ nav {
     right: 0;
     padding: 8px;
     background-color: $deepBlue;
+  }
+
+  &.wizard_nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: $deepBlue;
+    padding: 10px;
   }
 
   .logo {
@@ -163,6 +174,80 @@ nav {
   }
 }
 // END:: LARGE SCREENS NAV STYLES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // START:: HOME SECTION STYLES
 .intro_sec {
