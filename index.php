@@ -147,7 +147,7 @@
   <div id="apps_sec" class="applications_sec">
     <div class="container">
       <div class="header_wraper mb-5">
-        <h2> Applications </h2>
+        <h2> Our TrueCare Apps </h2>
         <div class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </div>

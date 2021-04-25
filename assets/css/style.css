@@ -912,4 +912,123 @@ nav .links_list li.translate_btn a:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(#00303f), to(#27AAE2));
   background-image: linear-gradient(to right, #00303f, #27AAE2);
 }
+
+footer {
+  width: 100%;
+  background: url("../media/pattern2.jpg") #00303f;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+footer .curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+footer .curve svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 35px;
+}
+
+footer .curve svg .shape-fill {
+  fill: #FFFFFF;
+}
+
+footer .footer_info {
+  padding-top: 20px;
+}
+
+footer .footer_info .contact_info,
+footer .footer_info .social_links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer_info .contact_info li,
+footer .footer_info .social_links li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer_info .contact_info li img,
+footer .footer_info .social_links li img {
+  width: 40px;
+  height: 40px;
+}
+
+footer .footer_info .contact_info li:hover,
+footer .footer_info .social_links li:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+footer .footer_info .contact_info li {
+  margin-inline: 15px;
+}
+
+footer .footer_info .contact_info li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+footer .footer_info .social_links li {
+  margin-inline: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-color: #fff;
+}
+
+footer .footer_info .social_links li img {
+  width: 40px;
+  height: 40px;
+}
+
+footer .footer_info .social_links li:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+footer .copyrights {
+  padding: 15px;
+}
+
+footer .copyrights p {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+footer .copyrights p span {
+  font-family: 'Lobster', cursive;
+}
 /*# sourceMappingURL=style.css.map */

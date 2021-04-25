@@ -97,7 +97,7 @@
       <div class="col-12 col-md-2 my-3 m-md-0">
         <div class="btn_wraper">
           <button>
-            Get Demo
+            Try It For Free
           </button>
         </div>
       </div>
@@ -117,9 +117,9 @@
   <ul class="links_list">
     <li> <a href="index.php#intro_sec" class="active"> Home </a> </li>
     <li> <a href="index.php#about_sec"> About </a> </li>
-    <li> <a href="index.php#apps_sec"> Appliations </a> </li>
+    <li> <a href="index.php#apps_sec"> Our TrueCare Apps </a> </li>
     <li> <a href="index.php#faqs_sec"> FAQs </a> </li>
-    <li> <a href="index.php#clients_sec"> Our Clients </a> </li>
+    <li> <a href="index.php#clients_sec"> Our Partners  </a> </li>
     <li> <a href="index.php#contact_sec"> Contact Us </a> </li>
 
     <!-- START:: TRANSLATION BTN -->

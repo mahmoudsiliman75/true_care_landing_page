@@ -1,3 +1,74 @@
+<!-- START::THE FOOTER -->
+<footer>
+  <!-- START:: FOOTER CURVE -->
+  <div class="curve">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+    </svg>
+  </div>
+  <!-- START:: FOOTER CURVE -->
+
+  <!-- START:: FOOTER INFO SECTION -->
+  <div class="footer_info">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 my-2">
+          <ul class="contact_info">
+            <li>
+              <a href="mailto: TrueCare@info.com">
+                <i class="fas fa-at"></i>
+                TrueCare@info.com
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto: 010000000021">
+                <i class="fas fa-mobile-alt"></i>
+                010000000021
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 my-2">
+          <ul class="social_links">
+            <li>
+              <a href="#" target="_blank">
+                <img src="assets/media/icons/facebook.png" alt="">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" target="_blank">
+                <img src="assets/media/icons/instagram.png" alt="">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" target="_blank">
+                <img src="assets/media/icons/twitter.png" alt="">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" target="_blank">
+                <img src="assets/media/icons/whatts.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END:: FOOTER INFO SECTION -->
+
+  <!-- START:: COPYRIGHTS SECTION -->
+  <div class="copyrights">
+    <p> Copyrights &copy; All Rights Reserved To True Care. </p>
+  </div>
+  <!-- END:: COPYRIGHTS SECTION -->
+</footer>
+<!-- END::THE FOOTER -->
 
 <!-- START:: INCLUDING JQUERY SCRIPT FILE -->
 <script src="assets/js/jquery.min.js"></script>
