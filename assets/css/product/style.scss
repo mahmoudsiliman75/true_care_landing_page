@@ -1,0 +1,289 @@
+// START:: VARIABLES
+@import '../variables.scss';
+// END:: VARIABLES
+
+// START:: MIXINS
+@import '../mixins.scss';
+// END:: MIXINS
+
+// START:: GLOBAL STYLES
+html {  
+  body {
+    &::-webkit-scrollbar-thumb {
+      background-color: $midPurple;
+    }
+  }
+}
+// END:: GLOBAL STYLES
+
+// START:: UPPER BAR STYLES
+.upper_bar {
+  .btn_wraper {
+    a {
+      @include btnStyle();
+      background-image: linear-gradient(to right, $pink, $lightPurple, $midPurple);
+      &:hover {
+        background-image: linear-gradient(to right, $midPurple, $lightPurple, $pink);
+      }
+    }
+  }
+}
+// END:: UPPER BAR STYLES
+
+// START:: LARGE SCREENS NAV STYLES
+nav {
+  &.stiky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    background-color: $deepPurple;
+    .links_list {
+      li {
+        a {
+          color: $white;
+          &.active, 
+          &:hover {
+            color: $pink;
+          }
+        }
+  
+        &.translate_btn {
+          a {
+            color: $pink;
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    a {
+      color: $lightPurple;
+      span {
+        color: $pink;
+      }
+    }
+  }
+
+  .links_list {
+    li {
+      a {
+        color: $white;
+        &.active, 
+        &:hover {
+          color: $deepPurple;
+        }
+      }
+
+      &.translate_btn {
+        a {
+          color: $deepPurple;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+// END:: LARGE SCREENS NAV STYLES
+
+// START:: HOME SECTION STYLES
+.intro_sec {
+  background-image: linear-gradient(to right, $midPurple, $lightPurple, $pink);
+  .mockup_wraper {
+    margin-top: -50px;
+    z-index: 4;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 400px;
+    max-height: 400px;
+    position: relative;
+    background-image: url('../../media/screen.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .preview {
+      position: absolute;
+      top: 53px;
+      left: 78px;
+      width: 451px;
+      height: 281px;
+      background-size: 100% !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      @include borderRadius(3px);
+    }
+  }
+
+  .intro_info {
+    .container-fluid {
+      .row {
+        .info_text_wraper {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+// END:: HOME SECTION STYLES
+
+// START:: ABOUT SECTION STYLES
+.about_sec {
+  .about_content_wraper {
+    h2 {
+      font-size: 3rem;
+      color: $lightGrey;
+      span {
+        color: $lightPurple
+      }
+    }
+  }
+  .cards_wraper {
+    .card {
+      border-bottom: 2px solid $midPurple;
+    }
+  }
+}
+// END:: ABOUT SECTION STYLES
+
+// START:: FAQS SECTION STYLES
+.faqs_sec {
+  .header_wraper {
+    h2 {
+      @include mainHeaderStyle();
+      color: $deepPurple;
+    }
+  }
+
+  .accordion_wraper {
+    .accordion {
+      .card {
+        .card-header {
+          background-image: linear-gradient(to right, $pink, $lightPurple, $midPurple);
+        }
+      }
+    }
+  }
+}
+// END:: FAQS SECTION STYLES
+
+// START:: PRICING SECTION STYLES
+.pricing_sec {
+  padding: $paddingAmount 0;
+  .header_wraper {
+    @include flexCenterAlignment();
+    margin-bottom: 25px;
+    h2 {
+      @include mainHeaderStyle();
+      color: $deepPurple;
+    }
+  }
+
+  .pricing_card {
+    padding: 35px 25px;
+    @include borderRadius($borderRadiusAmount);
+    @include midShadow();
+    .card_header {
+      text-align: center;
+      h3 {
+        color: $lightPurple;
+        font-weight: 600;
+        font-size: 30px;
+      }
+
+      h2 {
+        color: $pink;
+        font-weight: 600;
+        font-size: 35px;
+        margin-block: 20px;
+        span {
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .card_body {
+      margin-top: 20px;
+      position: relative;
+      .list-group {
+        .list-group-item {
+          @include flexStartAlignment();
+          border: none;
+          padding: 10px 8px;
+          .item_stat {
+            width: 30px;
+            height: 30px;
+          }
+          span {
+            color: $lightGrey;
+            font-size: 20px;
+            margin-inline-start: 8px
+          }
+        }
+      }
+
+      .btn_wraper {
+        @include flexCenterAlignment();
+        width: 100%;
+        position: absolute;
+        bottom: -57px;
+        left: 50%;
+        transform: translateX(-50%);
+        a {
+          text-decoration: none;
+          @include btnStyle();
+          background-image: linear-gradient(to right, $midPurple, $lightPurple, $pink);
+          &:hover {
+            background-image: linear-gradient(to right, $midPurple, $lightPurple, $pink);
+          }
+        }
+      }
+    }
+  }
+}
+// END:: PRICING SECTION STYLES
+
+// START:: CONTACT US SECTION STYLES
+.contact_us {
+  .header_wraper {
+    h2 {
+      @include mainHeaderStyle();
+      color: $deepPurple;
+    }
+  }
+
+  .form_wraper {
+    .form-group {
+      svg {
+        color: $pink;
+        opacity: 0.8;
+      }
+    }
+
+    .btn_wraper {
+      width: 100%;
+      @include flexCenterAlignment();
+      button {
+        @include btnStyle();
+        background-image: linear-gradient(to right, $pink, $lightPurple, $midPurple);
+        &:hover {
+          background-image: linear-gradient(to right, $midPurple, $lightPurple, $pink);
+        }
+      }
+    }
+  }
+}
+// END:: CONTACT US SECTION STYLES
+
+// START:: FOOTER STYLES
+footer {
+  background-image: linear-gradient(to right, $midPurple, $lightPurple, $pink);
+}
+// END:: FOOTER STYLES

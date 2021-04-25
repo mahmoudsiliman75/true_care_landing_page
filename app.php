@@ -1,11 +1,11 @@
 <!-- START:: INCLUDING THE HEADER -->
-<?php include('layouts/TheHeader.php')?>
+<?php include('layouts/product/ProductHeader.php')?>
 <!-- END:: INCLUDING THE HEADER -->
-  
+
   <!-- START:: HOME SECTION -->
   <div id="intro_sec" class="intro_sec">
     <!-- START:: HOME SECTION CURVE -->
-    <img class="curve" src="assets/media/shp01.png">
+    <img class="curve" src="assets/media/shp05.png">
     <!-- END:: HOME SECTION CURVE -->
 
     <!-- START:: BALLONS -->
@@ -27,9 +27,11 @@
     <div class="intro_info">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 d-flex justify-content-center align-items-center flex-column">
-            <div class="info_header_wraper">
-              <h1 id="element" class="text-center"> </h1>
+          <div class="col-12 d-flex justify-content-between align-items-center flex-column">
+            <div class="mockup_wraper">
+              <!-- <img src="assets/media/screen.png"> -->
+              <div class="preview" style="background: url('./assets/media/preview.png')">
+              </div>
             </div>
 
             <div class="info_text_wraper">
@@ -54,12 +56,9 @@
       <div class="row align-items-center">
         <div class="col-12 col-lg-6 mb-4">
           <div class="about_content_wraper">
-            <h2> 
-              What Heighlights 
-              <span>
-                <span>True</span> 
-                Care
-              </span> 
+            <h2 class="text-center"> 
+              <span>App</span> 
+              Features 
             </h2>
             <div class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Ea placeat voluptas laboriosam soluta expedita aperiam, 
@@ -142,51 +141,6 @@
     </div>
   </div>
   <!-- END:: ABOUT SECTION -->
-
-  <!-- START:: APPLICATIONS SECTION -->
-  <div id="apps_sec" class="applications_sec">
-    <div class="container">
-      <div class="header_wraper mb-5">
-        <h2> Our TrueCare Apps </h2>
-        <div class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-4 my-3">
-          <a href="app.php" class="app_card">
-            <div class="img_wraper">
-              <img src="assets/media/icons/logo.png" alt="">
-            </div>
-
-            <div class="info_wraper">
-              <h4> Coasmatics </h4>
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-4 my-3">
-          <a href="app.php" class="app_card">
-            <div class="img_wraper">
-              <img src="assets/media/icons/logo.png" alt="">
-            </div>
-
-            <div class="info_wraper">
-              <h4> U Care </h4>
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- END:: APPLICATIONS SECTION -->
 
   <!-- START:: FAQS SECTION -->
   <div id="faqs_sec" class="faqs_sec">
@@ -305,70 +259,157 @@
   </div>
   <!-- END:: FAQS SECTION -->
 
-  <!-- START:: OUR CLIENTS SECTION -->
-  <div id="clients_sec" class="clients_sec">
+  <!-- START:: PRICING SECTION -->
+  <div id="pricing_sec" class="pricing_sec">
     <div class="container-fluid">
-      <div class="header_wraper mb-4">
-        <h2> Our Success Partners </h2>
+      <div class="header_wraper">
+        <h2> Our Pricing Plans </h2>
       </div>
 
-      <div class="row flex-column align-items-center justify-content-center mt-3 overflow-hidden">
-        <div id="clients" class="owl-carousel owl-theme col-11">
+      <div class="row justify-content-center">
+        <div class="col-9 col-md-3 my-4">
+          <div class="pricing_card">
+            <div class="card_header">
+              <h3> Free </h3>
+              <h2> 0 EGP <span> / Monthly </span> </h2>
+              <h3> Features </h3>
+            </div>
 
-          <div class="item text-center">
-            <div class="img_wraper">
-              <img src="assets/media/clients/prand1.png" alt="client"> 
+            <div class="card_body">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/check2.png">
+                  <span> Feature 1 </span>
+                </li>
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/cross.png">
+                  <span> Feature 2 </span>
+                </li>
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/cross.png">
+                  <span> Feature 3 </span>
+                </li>
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/cross.png">
+                  <span> Feature 4 </span>
+                </li>
+              </ul>
+
+              <div class="btn_wraper">
+                <a href="#"> Start Now! </a>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div class="item text-center">
-            <div class="img_wraper">
-              <img src="assets/media/clients/prand2.jpg" alt="client"> 
+        <div class="col-9 col-md-3 my-4">
+          <div class="pricing_card">
+            <div class="card_header">
+              <h3> 3 Monthes </h3>
+              <h2>  1000 EGP <span> / Monthly </span> </h2>
+              <h3> Features </h3>
+            </div>
+
+            <div class="card_body">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/check2.png">
+                  <span> Feature 1 </span>
+                </li>
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/check2.png">
+                  <span> Feature 2 </span>
+                </li>
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/cross.png">
+                  <span> Feature 3 </span>
+                </li>
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/check2.png">
+                  <span> Feature 4 </span>
+                </li>
+              </ul>
+
+              <div class="btn_wraper">
+                <a href="#"> Start Now! </a>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div class="item text-center">
-            <div class="img_wraper">
-              <img src="assets/media/clients/prand4.jpg" alt="client"> 
+        <div class="col-9 col-md-3 my-4">
+          <div class="pricing_card">
+            <div class="card_header">
+              <h3> 6 Monthes </h3>
+              <h2>  800 EGP <span> / Monthly </span> </h2>
+              <h3> Features </h3>
+            </div>
+
+            <div class="card_body">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/check2.png">
+                  <span> Feature 1 </span>
+                </li>
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/check2.png">
+                  <span> Feature 2 </span>
+                </li>
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/check2.png">
+                  <span> Feature 3 </span>
+                </li>
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/cross.png">
+                  <span> Feature 4 </span>
+                </li>
+              </ul>
+
+              <div class="btn_wraper">
+                <a href="#"> Start Now! </a>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div class="item text-center">
-            <div class="img_wraper">
-              <img src="assets/media/clients/prand3.png" alt="client"> 
+        <div class="col-9 col-md-3 my-4">
+          <div class="pricing_card">
+            <div class="card_header">
+              <h3> Yearly </h3>
+              <h2>  600 EGP <span> / Year </span> </h2>
+              <h3> Features </h3>
+            </div>
+
+            <div class="card_body">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/check2.png">
+                  <span> Feature 1 </span>
+                </li>
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/check2.png">
+                  <span> Feature 2 </span>
+                </li>
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/check2.png">
+                  <span> Feature 3 </span>
+                </li>
+                <li class="list-group-item">
+                  <img class="item_stat" src="assets/media/icons/check2.png">
+                  <span> Feature 4 </span>
+                </li>
+              </ul>
+
+              <div class="btn_wraper">
+                <a href="#"> Start Now! </a>
+              </div>
             </div>
           </div>
-
-          <div class="item text-center">
-            <div class="img_wraper">
-              <img src="assets/media/clients/prand5.jpg" alt="client">
-            </div>
-          </div>
-
-          <div class="item text-center">
-            <div class="img_wraper">
-              <img src="assets/media/clients/prand1.png" alt="client"> 
-            </div>
-          </div>
-
-          <div class="item text-center">
-            <div class="img_wraper">
-              <img src="assets/media/clients/prand2.jpg" alt="client"> 
-            </div>
-          </div>
-
-          <div class="item text-center">
-            <div class="img_wraper">
-              <img src="assets/media/clients/prand4.jpg" alt="client"> 
-            </div>
-          </div>
-
-
         </div>
       </div>
     </div>
   </div>
-  <!-- END:: OUR CLIENTS SECTION -->
+  <!-- END:: PRICING SECTION -->
 
   <!-- START:: CONTACT US SECTION -->
   <div id="contact_sec" class="contact_us">

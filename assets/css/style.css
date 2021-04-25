@@ -784,9 +784,9 @@ nav .links_list li.translate_btn a:hover {
   overflow: hidden;
 }
 
-.intro_sec img {
+.intro_sec .curve {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 100%;
   z-index: 2;
@@ -1467,32 +1467,8 @@ nav .links_list li.translate_btn a:hover {
 
 footer {
   width: 100%;
-  background: url("../media/pattern2.jpg") #00303f;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-footer .curve {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-footer .curve svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 35px;
-}
-
-footer .curve svg .shape-fill {
-  fill: #FFFFFF;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00303f), to(#27AAE2));
+  background-image: linear-gradient(to right, #00303f, #27AAE2);
 }
 
 footer .footer_info {
