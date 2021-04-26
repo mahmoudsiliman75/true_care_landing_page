@@ -1469,6 +1469,29 @@ footer {
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(#00303f), to(#27AAE2));
   background-image: linear-gradient(to right, #00303f, #27AAE2);
+  position: relative;
+}
+
+footer .curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+footer .curve svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 35px;
+}
+
+footer .curve svg .shape-fill {
+  fill: #fff;
 }
 
 footer .footer_info {

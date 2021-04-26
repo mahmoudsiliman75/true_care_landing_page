@@ -116,12 +116,13 @@
   </div>
 
   <ul class="links_list">
-    <li> <a href="index.php#intro_sec" class="active"> Home </a> </li>
-    <li> <a href="index.php#about_sec"> About </a> </li>
-    <li> <a href="index.php#apps_sec"> Our TrueCare Apps </a> </li>
-    <li> <a href="index.php#faqs_sec"> FAQs </a> </li>
-    <li> <a href="index.php#clients_sec"> Our Partners  </a> </li>
-    <li> <a href="index.php#contact_sec"> Contact Us </a> </li>
+    <li> <a href="index.php" class="active"> Home </a> </li>
+    <li> <a href="app.php#about_sec"> About </a> </li>
+    <li> <a href="app.php#promo_sec"> Promo Video </a> </li>
+    <li> <a href="app.php#faqs_sec"> FAQs </a> </li>
+    <li> <a href="app.php#screens_sec"> ScreenShots </a> </li>
+    <li> <a href="app.php#pricing_sec"> Pricing </a> </li>
+    <li> <a href="app.php#contact_sec"> Contact Us </a> </li>
 
     <!-- START:: TRANSLATION BTN -->
     <li class="translate_btn"> 

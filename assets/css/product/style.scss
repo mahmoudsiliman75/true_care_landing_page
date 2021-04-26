@@ -152,6 +152,58 @@ nav {
 }
 // END:: ABOUT SECTION STYLES
 
+// START:: DEMO VIDEO SECTION STYLES
+.promo_sec {
+  .video_wrape {
+    min-height: 500px;
+    max-height: 500px;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    background-position: center !important;
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      @include flexCenterAlignment();
+      button {
+        width: 95px;
+        height: 95px;
+        background-color: $white !important;
+        @include borderRadius(50%);
+        @include flexCenterAlignment();
+        @include transitioning();
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        img {
+          width: 115px;
+          height: 115px;
+        }
+      }
+
+      .modal {
+        .modal-dialog {
+          .modal-body {
+            padding: 0;
+            iframe {
+              width: 100%;
+              min-height: 600px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END:: DEMO VIDEO SECTION STYLES
+
 // START:: FAQS SECTION STYLES
 .faqs_sec {
   .header_wraper {
@@ -172,6 +224,52 @@ nav {
   }
 }
 // END:: FAQS SECTION STYLES
+
+// START:: SCREENS SECTION STYLES
+.screens {
+  padding: $paddingAmount 0;
+  .header_wraper {
+    margin-bottom: 30px;
+    @include flexCenterAlignment();
+    h2 {
+      @include mainHeaderStyle();
+      color: $deepPurple;
+    }
+  }
+
+  .slider_wraper {
+    .owl-carousel {
+      .item {
+        margin-bottom: 30px;
+        text-align: center;
+        .img_wraper {
+          img {
+            width: 100%;
+            height: 100%;
+            @include borderRadius($borderRadiusAmount);
+          }
+        }
+      }
+    }
+
+    .owl-dots {
+      .owl-dot {
+        &.active {
+          span {
+            background-image: linear-gradient(to right, $pink, $lightPurple, $midPurple);
+            padding: 6px 25px;
+            @include borderRadius($midBorderRadiusAmount);
+          }
+        }
+        span {
+          padding: 6px;
+          background-color: $lighterGrey;
+        }
+      }
+    }
+  }
+}
+// END:: SCREENS SECTION STYLES
 
 // START:: PRICING SECTION STYLES
 .pricing_sec {

@@ -34,14 +34,14 @@
               </div>
             </div>
 
-            <div class="info_text_wraper">
+            <!-- <div class="info_text_wraper">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Nostrum, quae necessitatibus quo aperiam nesciunt porro cum 
                 quia magnam ab illo dolores culpa placeat maxime provident! 
                 Exercitationem numquam itaque minus reprehenderit!
               </p>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -141,6 +141,31 @@
     </div>
   </div>
   <!-- END:: ABOUT SECTION -->
+
+  <!-- START:: PROMO VIDEO SECTION -->
+  <div id="promo_sec" class="promo_sec">
+    <div class="video_wrape" style="background: url('https://i.ytimg.com/vi_webp/3chGVpR9NzA/maxresdefault.webp');">
+      <div class="overlay">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+          <img src="assets/media/icons/play.png" alt="">
+        </button>
+
+        <!-- START:: DEMO MODAL -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="https://www.youtube.com/embed/3chGVpR9NzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END:: DEMO MODAL -->
+      </div>
+    </div>
+  </div>
+  <!-- END:: PROMO VIDEO SECTION -->
 
   <!-- START:: FAQS SECTION -->
   <div id="faqs_sec" class="faqs_sec">
@@ -258,6 +283,69 @@
     </div>
   </div>
   <!-- END:: FAQS SECTION -->
+
+  <!-- START:: SCREENS SECTION -->
+  <div id="screens_sec" class="screens">
+    <div class="container">
+      <div class="header_wraper">
+        <h2> App ScreenShots </h2>
+      </div>
+
+      <div class="slider_wraper">
+        <div id="screens" class="owl-carousel owl-theme">
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/slider/pic10.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/slider/pic5.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/slider/pic6.jpg" alt="">
+            </div>
+
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/slider/pic7.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/slider/pic8.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/slider/pic15.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/slider/pic17.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="item text-center">
+            <div class="img_wraper">
+              <img src="assets/media/slider/pic21.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END:: SCREENS SECTION -->
 
   <!-- START:: PRICING SECTION -->
   <div id="pricing_sec" class="pricing_sec">
