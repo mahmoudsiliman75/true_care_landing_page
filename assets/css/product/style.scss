@@ -154,9 +154,35 @@ nav {
 
 // START:: DEMO VIDEO SECTION STYLES
 .promo_sec {
+  position: relative;
+  .upper_curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+    svg {
+      position: relative;
+      display: block;
+      width: calc(120% + 1.3px);
+      height: 41px;
+      .shape-fill {
+        fill: $white;
+      }
+    }
+    @media (max-width: 767px) {
+      svg {
+        width: calc(120% + 1.3px);
+        height: 21px;
+      }
+    }
+  }
+
   .video_wrape {
-    min-height: 500px;
-    max-height: 500px;
+    min-height: 600px;
+    max-height: 600px;
     background-repeat: no-repeat !important;
     background-size: 100% !important;
     background-position: center !important;
@@ -198,6 +224,32 @@ nav {
             }
           }
         }
+      }
+    }
+  }
+
+  .lower_curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 10;
+    svg {
+      position: relative;
+      display: block;
+      width: calc(116% + 1.3px);
+      height: 58px;
+      .shape-fill {
+        fill: $white;
+      }
+    }
+    @media (max-width: 767px) {
+      svg {
+        width: calc(116% + 1.3px);
+        height: 21px;
       }
     }
   }

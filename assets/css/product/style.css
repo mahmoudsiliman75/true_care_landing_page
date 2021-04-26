@@ -122,9 +122,41 @@ nav .links_list li.translate_btn a:hover {
   border-bottom: 2px solid #271a4a;
 }
 
+.promo_sec {
+  position: relative;
+}
+
+.promo_sec .upper_curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 10;
+}
+
+.promo_sec .upper_curve svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 41px;
+}
+
+.promo_sec .upper_curve svg .shape-fill {
+  fill: #fff;
+}
+
+@media (max-width: 767px) {
+  .promo_sec .upper_curve svg {
+    width: calc(120% + 1.3px);
+    height: 21px;
+  }
+}
+
 .promo_sec .video_wrape {
-  min-height: 500px;
-  max-height: 500px;
+  min-height: 600px;
+  max-height: 600px;
   background-repeat: no-repeat !important;
   background-size: 100% !important;
   background-position: center !important;
@@ -185,6 +217,36 @@ nav .links_list li.translate_btn a:hover {
   width: 100%;
   min-height: 600px;
   margin: 0;
+}
+
+.promo_sec .lower_curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 10;
+}
+
+.promo_sec .lower_curve svg {
+  position: relative;
+  display: block;
+  width: calc(116% + 1.3px);
+  height: 58px;
+}
+
+.promo_sec .lower_curve svg .shape-fill {
+  fill: #fff;
+}
+
+@media (max-width: 767px) {
+  .promo_sec .lower_curve svg {
+    width: calc(116% + 1.3px);
+    height: 21px;
+  }
 }
 
 .faqs_sec .header_wraper h2 {
