@@ -560,12 +560,13 @@ html body::-webkit-scrollbar-thumb {
 }
 
 .upper_bar {
-  padding: 8px;
-  background-color: rgba(225, 225, 225, 0.5);
+  padding: 0 8px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00303f), color-stop(#076585), to(#f2f2f2));
+  background-image: linear-gradient(to right, #00303f, #076585, #f2f2f2);
 }
 
 .upper_bar .hint_wraper p {
-  color: #00303f;
+  color: #fff;
   font-size: 20px;
   font-weight: 700;
   margin: 0;
@@ -602,7 +603,7 @@ html body::-webkit-scrollbar-thumb {
 
 .upper_bar .info_icons ul li a {
   text-decoration: none;
-  color: #00303f;
+  color: #fff;
   font-size: 18px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -622,9 +623,9 @@ html body::-webkit-scrollbar-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .upper_bar .social_icons ul li {
@@ -677,11 +678,19 @@ html body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 5px 10px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#1d7ca5), to(#66ebbd));
+  background-image: linear-gradient(to left, #1d7ca5, #66ebbd);
 }
 
 .upper_bar .btn_wraper a:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(#00303f), to(#27AAE2));
   background-image: linear-gradient(to right, #00303f, #27AAE2);
+}
+
+.upper_bar .btn_wraper a:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#66ebbd), to(#1d7ca5));
+  background-image: linear-gradient(to left, #66ebbd, #1d7ca5);
 }
 
 nav {
@@ -1458,6 +1467,16 @@ nav .links_list li.translate_btn a:hover {
   padding-top: 15px;
 }
 
+.contact_us .form_wraper .form-group.in-valid {
+  border: 1px solid red;
+}
+
+.contact_us .form_wraper .form-group.in-valid + p {
+  color: red;
+  margin: 5px 0;
+  font-size: 15px;
+}
+
 .contact_us .form_wraper .btn_wraper {
   width: 100%;
   display: -webkit-box;
@@ -1480,11 +1499,47 @@ nav .links_list li.translate_btn a:hover {
   border-radius: 10px;
   font-weight: 700;
   text-transform: uppercase;
+  width: 25%;
 }
 
 .contact_us .form_wraper .btn_wraper button:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(#00303f), to(#27AAE2));
   background-image: linear-gradient(to right, #00303f, #27AAE2);
+}
+
+.floating_btns_wraper {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 20;
+}
+
+.floating_btns_wraper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.floating_btns_wraper ul li {
+  margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.floating_btns_wraper ul li a img {
+  width: 100%;
+  height: 100%;
 }
 
 footer {

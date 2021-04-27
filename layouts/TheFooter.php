@@ -1,3 +1,21 @@
+<!-- START:: FLOATING BUTTONS -->
+<div class="floating_btns_wraper">
+  <ul>
+    <li> 
+      <a href="https://wa.me/01000000001" target="__blanck">
+        <img src="assets/media/icons/floating_whatts.png" alt="">
+      </a>
+    </li>
+
+    <li> 
+      <a href="#" target="__blanck">
+        <img src="assets/media/icons/floating_messanger.png" alt="">
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- END:: FLOATING BUTTONS -->
+
 <!-- START::THE FOOTER -->
 <footer>
   <!-- START:: CURVE -->

@@ -42,19 +42,6 @@ $(document).ready( function() {
     $(this).addClass('active');
   });
 
-//   // START:: WOW JS
-//   wow = new WOW(
-//     {
-//     boxClass:     'wow',     
-//     animateClass: 'animated',
-//     offset:       150,         
-//     mobile:       false,      
-//     live:         true       
-//   }
-//   )
-//   wow.init();
-//   // END:: WOW JS
-
   // START:: OWL CAROUSEL
   $('#clients').owlCarousel({
     loop:true,
@@ -111,58 +98,11 @@ $(document).ready( function() {
   })
   // END:: OWL CAROUSEL
 
-//   // START:: TOGGLE FORMS
-//   $('#show_register').on('click', function() {
-//     $('#login_form_wraper').css('display', 'none');
-//     $('#login_form_wraper').css('display', 'none');
-//     $('#signup_form_wraper').css('display', 'block');
-//   });
-
-//   $('#show_reset').on('click', function() {
-//     $('#login_form_wraper').css('display', 'none');
-//     $('#signup_form_wraper').css('display', 'none');
-//     $('#reset_form_wraper').css('display', 'block');
-//   });
-//   // END:: TOGGLE FORMS
-
-//   // START:: FLEX SLIDER
-//   $('#carousel').flexslider({
-//     animation: "slide",
-//     controlNav: true,
-//     animationLoop: true,
-//     slideshow: true,
-//     itemWidth: 160,
-//     itemMargin: 0,
-//     asNavFor: '#slider'
-//   });
-
-//   $('#slider').flexslider({
-//     animation: "slide",
-//     controlNav: false,
-//     animationLoop: false,
-//     slideshow: false,
-//     sync: "#carousel"
-//   });
-//   // END:: FLEX SLIDER
-
-//   // START:: BOOTSTRAP SELECT
-//   $('#qualifications').selectpicker();
-//   $('#years').selectpicker();
-//   // END:: BOOTSTRAP SELECT
-
-//   // START:: CART INCREASE & DECREASE BTNS
-//   $(".plus_btn").on('click', function() {
-//     let productAmount = parseInt($(this).parent().siblings('.amount').text());
-//     productAmount += 1;
-//     $(this).parent().siblings('.amount').text(productAmount);
-//   });
-
-//   $(".minus_btn").on('click', function() {
-//     let productAmount = parseInt($(this).parent().siblings('.amount').text());
-//     productAmount -= 1;
-//     $(this).parent().siblings('.amount').text(productAmount);
-//   });
-//   // END:: CART INCREASE & DECREASE BTNS
+  // START:: SELECT RADIO BUTTON
+  $('.radio_img').click(function() {
+    $(this).next().children('input[type=radio]').prop("checked", true);
+  });
+  // END:: SELECT RADIO BUTTON
 });
 
 // START:: WIZRD FUNCTIONS

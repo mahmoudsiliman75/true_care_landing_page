@@ -41,7 +41,7 @@
                 <div class="row justify-content-center">
                   <div class="col-6 col-md-3">
                     <div class="app_card">
-                      <div class="img_wraper">
+                      <div class="img_wraper radio_img">
                         <img src="assets/media/icons/logo2.png" alt="">
                       </div>
 
@@ -56,7 +56,7 @@
 
                   <div class="col-6 col-md-3">
                     <div class="app_card">
-                      <div class="img_wraper">
+                      <div class="img_wraper radio_img">
                         <img src="assets/media/icons/logo.png" alt="">
                       </div>
 

@@ -380,7 +380,17 @@
         </div>
       </div>
 
-      <div class="row justify-content-center">
+      <div class="row flex-column align-items-center justify-content-center">
+        <div class="alert_wraper col-12 col-md-8 mt-2">
+          <div class="alert alert-danger text-center" role="alert">
+            Something Went Wrong
+          </div>
+        </div>
+        <div class="alert_wraper col-12 col-md-8 mt-2">
+          <div class="alert alert-success text-center" role="alert">
+            Sent Successfuly
+          </div>
+        </div>
         <div class="col-12 col-md-8">
           <div class="form_wraper">
             <form action="">
@@ -394,9 +404,12 @@
                 <input type="email" class="form-control" name="email" placeholder="Your Email">
               </div>
 
-              <div class="form-group my-4">
-                <i class="fas fa-mobile-alt fa-2x"></i>
-                <input type="text" class="form-control" name="phone" placeholder="Your Phone Number">
+              <div class="my-4">
+                <div class="form-group in-valid">
+                  <i class="fas fa-mobile-alt fa-2x"></i>
+                  <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" name="phone" placeholder="Your Phone Number">
+                </div>
+                <p> Wrong Number </p>
               </div>
 
               <div class="form-group my-4">
