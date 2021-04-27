@@ -82,6 +82,28 @@ nav .links_list li.translate_btn a:hover {
   color: #ffb037;
 }
 
+@media (max-width: 1000px) {
+  .upper_bar .hint_wraper p {
+    font-size: 15px;
+  }
+  .upper_bar .info_icons ul li a {
+    font-size: 15px;
+  }
+  .upper_bar .social_icons ul li {
+    width: 30px;
+    height: 30px;
+  }
+  .upper_bar .btn_wraper a {
+    padding: 5px 10px;
+  }
+  nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+  }
+}
+
 .intro_sec {
   background-image: -webkit-gradient(linear, left top, right top, from(#27AAE2), to(#ffb037));
   background-image: linear-gradient(to right, #27AAE2, #ffb037);

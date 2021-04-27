@@ -74,6 +74,28 @@ nav .links_list li.translate_btn a:hover {
   color: #fff;
 }
 
+@media (max-width: 1000px) {
+  .upper_bar .hint_wraper p {
+    font-size: 15px;
+  }
+  .upper_bar .info_icons ul li a {
+    font-size: 15px;
+  }
+  .upper_bar .social_icons ul li {
+    width: 30px;
+    height: 30px;
+  }
+  .upper_bar .btn_wraper a {
+    padding: 5px 10px;
+  }
+  nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+  }
+}
+
 .intro_sec {
   background-image: -webkit-gradient(linear, left top, right top, from(#271a4a), color-stop(#7D4196), to(#FF449C));
   background-image: linear-gradient(to right, #271a4a, #7D4196, #FF449C);
@@ -103,6 +125,21 @@ nav .links_list li.translate_btn a:hover {
   background-position: center !important;
   background-repeat: no-repeat !important;
   border-radius: 3px;
+}
+
+@media (max-width: 700px) {
+  .intro_sec .mockup_wraper {
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .intro_sec .mockup_wraper .preview {
+    top: 0px;
+    left: 64px;
+    width: 377px;
+    height: 292px;
+  }
 }
 
 .intro_sec .intro_info .container-fluid .row .info_text_wraper {
