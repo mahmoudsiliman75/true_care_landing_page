@@ -1,0 +1,444 @@
+// START:: VARIABLES
+@import '../variables.scss';
+// END:: VARIABLES
+
+// START:: MIXINS
+@import '../mixins.scss';
+// END:: MIXINS
+
+// START:: GLOBAL STYLES
+html {  
+  body {
+    &::-webkit-scrollbar-thumb {
+      background-color: $midPurple;
+    }
+  }
+}
+// END:: GLOBAL STYLES
+
+// START:: UPPER BAR STYLES
+.upper_bar {
+  .btn_wraper {
+    a {
+      @include btnStyle();
+        background-image: linear-gradient(to right, $deepBlue, $mainColor, $midYellow);
+      &:hover {
+        background-image: linear-gradient(to right, $midYellow, $mainColor, $deepBlue);
+      }
+    }
+  }
+}
+// END:: UPPER BAR STYLES
+
+// START:: LARGE SCREENS NAV STYLES
+nav {
+  &.stiky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    background-color: $deepBlue;
+    .logo {
+      a {
+        color: $midYellow;
+        span {
+          color: $mainColor;
+        }
+      }
+    }
+
+    .links_list {
+      li {
+        a {
+          color: $white;
+          &.active, 
+          &:hover {
+            color: $midYellow;
+          }
+        }
+  
+        &.translate_btn {
+          a {
+            color: $midYellow;
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    a {
+      color: $midYellow;
+      span {
+        color: $deepBlue;
+      }
+    }
+  }
+
+  .links_list {
+    li {
+      a {
+        color: $white;
+        &.active, 
+        &:hover {
+          color: $deepBlue;
+        }
+      }
+
+      &.translate_btn {
+        a {
+          color: $deepBlue;
+          &:hover {
+            color: $midYellow;
+          }
+        }
+      }
+    }
+  }
+}
+// END:: LARGE SCREENS NAV STYLES
+
+// START:: HOME SECTION STYLES
+.intro_sec {
+  background-image: linear-gradient(to right, $mainColor, $midYellow);
+  .mockup_wraper {
+    margin-top: -50px;
+    z-index: 4;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 400px;
+    max-height: 400px;
+    position: relative;
+    background-image: url('../../media/screen.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .preview {
+      position: absolute;
+      top: 53px;
+      left: 78px;
+      width: 451px;
+      height: 281px;
+      background-size: 100% !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      @include borderRadius(3px);
+    }
+  }
+
+  .intro_info {
+    .container-fluid {
+      .row {
+        .info_text_wraper {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+// END:: HOME SECTION STYLES
+
+// START:: ABOUT SECTION STYLES
+.about_sec {
+  .about_content_wraper {
+    h2 {
+      font-size: 3rem;
+      color: $lightGrey;
+      span {
+        color: $midYellow;
+      }
+    }
+  }
+  .cards_wraper {
+    .card {
+      border-bottom: 2px solid $mainColor;
+    }
+  }
+}
+// END:: ABOUT SECTION STYLES
+
+// START:: DEMO VIDEO SECTION STYLES
+.promo_sec {
+  position: relative;
+  .upper_curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+    svg {
+      position: relative;
+      display: block;
+      width: calc(120% + 1.3px);
+      height: 41px;
+      .shape-fill {
+        fill: $white;
+      }
+    }
+    @media (max-width: 767px) {
+      svg {
+        width: calc(120% + 1.3px);
+        height: 21px;
+      }
+    }
+  }
+
+  .video_wrape {
+    min-height: 600px;
+    max-height: 600px;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    background-position: center !important;
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      @include flexCenterAlignment();
+      button {
+        width: 95px;
+        height: 95px;
+        background-color: $white !important;
+        @include borderRadius(50%);
+        @include flexCenterAlignment();
+        @include transitioning();
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        img {
+          width: 115px;
+          height: 115px;
+        }
+      }
+
+      .modal {
+        .modal-dialog {
+          .modal-body {
+            padding: 0;
+            iframe {
+              width: 100%;
+              min-height: 600px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .lower_curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 10;
+    svg {
+      position: relative;
+      display: block;
+      width: calc(116% + 1.3px);
+      height: 58px;
+      .shape-fill {
+        fill: $white;
+      }
+    }
+    @media (max-width: 767px) {
+      svg {
+        width: calc(116% + 1.3px);
+        height: 21px;
+      }
+    }
+  }
+}
+// END:: DEMO VIDEO SECTION STYLES
+
+// START:: FAQS SECTION STYLES
+.faqs_sec {
+  .header_wraper {
+    h2 {
+      @include mainHeaderStyle();
+    }
+  }
+
+  .accordion_wraper {
+    .accordion {
+      .card {
+        .card-header {
+          background-image: linear-gradient(to right, $deepBlue, $mainColor, $midYellow);
+        }
+      }
+    }
+  }
+}
+// END:: FAQS SECTION STYLES
+
+// START:: SCREENS SECTION STYLES
+.screens {
+  padding: $paddingAmount 0;
+  .header_wraper {
+    margin-bottom: 30px;
+    @include flexCenterAlignment();
+    h2 {
+      @include mainHeaderStyle();
+    }
+  }
+
+  .slider_wraper {
+    .owl-carousel {
+      .item {
+        margin-bottom: 30px;
+        text-align: center;
+        .img_wraper {
+          img {
+            width: 100%;
+            height: 100%;
+            @include borderRadius($borderRadiusAmount);
+          }
+        }
+      }
+    }
+
+    .owl-dots {
+      .owl-dot {
+        &.active {
+          span {
+            background-image: linear-gradient(to right, $deepBlue, $midYellow);
+            padding: 6px 25px;
+            @include borderRadius($midBorderRadiusAmount);
+          }
+        }
+        span {
+          padding: 6px;
+          background-color: $lighterGrey;
+        }
+      }
+    }
+  }
+}
+// END:: SCREENS SECTION STYLES
+
+// START:: PRICING SECTION STYLES
+.pricing_sec {
+  padding: $paddingAmount 0;
+  .header_wraper {
+    @include flexCenterAlignment();
+    margin-bottom: 25px;
+    h2 {
+      @include mainHeaderStyle();
+    }
+  }
+
+  .pricing_card {
+    padding: 35px 25px;
+    @include borderRadius($borderRadiusAmount);
+    @include midShadow();
+    .card_header {
+      text-align: center;
+      h3 {
+        color: $mainColor;
+        font-weight: 600;
+        font-size: 30px;
+      }
+
+      h2 {
+        color: $midYellow;
+        font-weight: 600;
+        font-size: 35px;
+        margin-block: 20px;
+        span {
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .card_body {
+      margin-top: 20px;
+      position: relative;
+      .list-group {
+        .list-group-item {
+          @include flexStartAlignment();
+          border: none;
+          padding: 10px 8px;
+          .item_stat {
+            width: 30px;
+            height: 30px;
+          }
+          span {
+            color: $lightGrey;
+            font-size: 20px;
+            margin-inline-start: 8px
+          }
+        }
+      }
+
+      .btn_wraper {
+        @include flexCenterAlignment();
+        width: 100%;
+        position: absolute;
+        bottom: -57px;
+        left: 50%;
+        transform: translateX(-50%);
+        a {
+          text-decoration: none;
+          @include btnStyle();
+            background-image: linear-gradient(to right, $deepBlue, $mainColor, $midYellow);
+          &:hover {
+            background-image: linear-gradient(to right, $midYellow, $mainColor, $deepBlue);
+          }
+        }
+      }
+    }
+  }
+}
+// END:: PRICING SECTION STYLES
+
+// START:: CONTACT US SECTION STYLES
+.contact_us {
+  .header_wraper {
+    h2 {
+      @include mainHeaderStyle();
+    }
+  }
+
+  .form_wraper {
+    .form-group {
+      svg {
+        color: $mainColor;
+        opacity: 0.8;
+      }
+    }
+
+    .btn_wraper {
+      width: 100%;
+      @include flexCenterAlignment();
+      button {
+        @include btnStyle();
+          background-image: linear-gradient(to right, $deepBlue, $mainColor, $midYellow);
+        &:hover {
+          background-image: linear-gradient(to right, $midYellow, $mainColor, $deepBlue);
+        }
+      }
+    }
+  }
+}
+// END:: CONTACT US SECTION STYLES
+
+// START:: FOOTER STYLES
+footer {
+  background-image: linear-gradient(to right, $mainColor, $midYellow);
+}
+// END:: FOOTER STYLES

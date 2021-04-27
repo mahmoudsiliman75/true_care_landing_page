@@ -50,13 +50,13 @@
 <div class="upper_bar">
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between">
-      <div class="col-12 col-md-3 my-3 m-md-0">
+      <div class="col-3 col-md-3 my-2 my-md-3 m-md-0">
         <div class="hint_wraper">
           <p> 24/7 Support </p>
         </div>
       </div>
 
-      <div class="col-12 col-md-5 my-3 m-md-0">
+      <div class="col-9 col-md-5 my-2 my-md-3 m-md-0">
         <div class="info_icons">
           <ul>
             <li>
@@ -76,7 +76,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-2 my-3 m-md-0">
+      <div class="col-6 col-md-2 my-2 my-md-3 m-md-0">
         <div class="social_icons">
           <ul>
             <li>
@@ -94,7 +94,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-2 my-3 m-md-0">
+      <div class="col-6 col-md-2 my-2 my-md-3 m-md-0">
         <div class="btn_wraper">
           <a href="DemoForm.php">
             Try It For Free

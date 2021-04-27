@@ -175,6 +175,48 @@ nav {
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .upper_bar {
+    .hint_wraper {
+      p {
+        font-size: 15px;
+      }
+    }
+  
+    .info_icons {
+      ul {
+        li {
+          a {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  
+    .social_icons {
+      ul {
+        li {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  
+    .btn_wraper {
+      a {
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+  }
+}
 // END:: LARGE SCREENS NAV STYLES
 
 // START:: HOME SECTION STYLES
