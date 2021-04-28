@@ -36,8 +36,8 @@
 
   <!-- START:: INCLUDING MAIN STYLE FILE -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- <link rel="stylesheet" href="assets/css/product/style.css"> -->
-  <link rel="stylesheet" href="assets/css/product/theme.css">
+  <link rel="stylesheet" href="assets/css/product/style.css">
+  <!-- <link rel="stylesheet" href="assets/css/product/theme.css"> -->
   <!-- <link rel="stylesheet" href="assets/css/ar-style.css"> -->
   <!-- END:: INCLUDING MAIN STYLE FILE -->
 
@@ -118,10 +118,10 @@
 
   <ul class="links_list">
     <li> <a href="index.php" class="active"> Home </a> </li>
-    <li> <a href="app.php#about_sec"> About </a> </li>
+    <li> <a href="app.php#about_sec"> Features </a> </li>
     <li> <a href="app.php#promo_sec"> Promo Video </a> </li>
     <li> <a href="app.php#faqs_sec"> FAQs </a> </li>
-    <li> <a href="app.php#screens_sec"> ScreenShots </a> </li>
+    <!-- <li> <a href="app.php#screens_sec"> ScreenShots </a> </li> -->
     <li> <a href="app.php#pricing_sec"> Pricing </a> </li>
     <li> <a href="app.php#contact_sec"> Contact Us </a> </li>
 

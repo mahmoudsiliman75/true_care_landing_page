@@ -57,9 +57,6 @@ html {
           color: $white;
           font-size: 18px;
           @include transitioning();
-          &:hover {
-            color: $mainColor;
-          }
         }
       }
     }
@@ -376,7 +373,13 @@ nav {
         .info_text_wraper {
           width: 80%;
           margin-top: 15px;
-          p {
+          h2 {
+            text-align: center;
+            color: $white;
+            font-family: 'Lobster', cursive;
+            font-size: 3rem;
+          }
+          div {
             color: $white;
             font-size: 20px;
             line-height: 1.7;

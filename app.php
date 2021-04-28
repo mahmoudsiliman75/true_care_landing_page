@@ -27,21 +27,23 @@
     <div class="intro_info">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 d-flex justify-content-between align-items-center flex-column">
+          <div class="col-12 col-md-6">
             <div class="mockup_wraper">
-              <!-- <img src="assets/media/screen.png"> -->
               <div class="preview" style="background: url('./assets/media/preview.png')">
               </div>
             </div>
+          </div>
 
-            <!-- <div class="info_text_wraper">
-              <p>
+          <div class="col-12 col-md-6">
+            <div class="info_text_wraper">
+              <h2> App Name </h2>
+              <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Nostrum, quae necessitatibus quo aperiam nesciunt porro cum 
                 quia magnam ab illo dolores culpa placeat maxime provident! 
                 Exercitationem numquam itaque minus reprehenderit!
-              </p>
-            </div> -->
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -54,13 +56,13 @@
   <div id="about_sec" class="about_sec">
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-12 col-lg-6 mb-4">
+        <div class="col-12 mb-4">
           <div class="about_content_wraper">
             <h2 class="text-center"> 
               <span>App</span> 
               Features 
             </h2>
-            <div class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <div class="text text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Ea placeat voluptas laboriosam soluta expedita aperiam, 
               repellendus labore, enim porro, nihil aliquid. Culpa labore 
               nulla cumque quam, quasi ab dolor repellendus! 
@@ -68,10 +70,10 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-6">
+        <div class="col-12">
           <div class="cards_wraper">
             <div class="row">
-              <div class="col-12 col-lg-6 mb-4">
+              <div class="col-12 col-md-3 mb-4">
                 <div class="card">
                   <div class="icon_wraper">
                     <img src="assets/media/icons/star.png">
@@ -87,7 +89,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-lg-6 mb-4">
+              <div class="col-12 col-md-3 mb-4">
                 <div class="card">
                   <div class="icon_wraper">
                     <img src="assets/media/icons/data.png">
@@ -103,7 +105,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-lg-6 mb-4">
+              <div class="col-12 col-md-3 mb-4">
                 <div class="card">
                   <div class="icon_wraper">
                     <img src="assets/media/icons/list.png">
@@ -119,7 +121,71 @@
                 </div>
               </div>
 
-              <div class="col-12 col-lg-6 mb-4">
+              <div class="col-12 col-md-3 mb-4">
+                <div class="card">
+                  <div class="icon_wraper">
+                    <img src="assets/media/icons/watch.png">
+                  </div>
+
+                  <div class="card_details">
+                    <h4> Manage Your Scheduals </h4>
+                    <div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Praesentium harum natus.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-3 mb-4">
+                <div class="card">
+                  <div class="icon_wraper">
+                    <img src="assets/media/icons/star.png">
+                  </div>
+
+                  <div class="card_details">
+                    <h4> Upgrade your work Performace </h4>
+                    <div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Praesentium harum natus.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-3 mb-4">
+                <div class="card">
+                  <div class="icon_wraper">
+                    <img src="assets/media/icons/data.png">
+                  </div>
+
+                  <div class="card_details">
+                    <h4> Data Analyse </h4>
+                    <div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Praesentium harum natus.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-3 mb-4">
+                <div class="card">
+                  <div class="icon_wraper">
+                    <img src="assets/media/icons/list.png">
+                  </div>
+
+                  <div class="card_details">
+                    <h4> Full Reports </h4>
+                    <div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Praesentium harum natus.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-3 mb-4">
                 <div class="card">
                   <div class="icon_wraper">
                     <img src="assets/media/icons/watch.png">
@@ -186,11 +252,163 @@
   <!-- START:: FAQS SECTION -->
   <div id="faqs_sec" class="faqs_sec">
     <div class="container">
-      <div class="header_wraper mb-4">
+      <div class="header_wraper my-4">
         <h2> FAQs </h2>
       </div>
 
-      <div class="row justify-content-center">
+      <!-- START:: SIDE TABS -->
+      <div class="row">
+        <div class="col-3">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link my-2 text-center active" id="v-qu1-tab" data-toggle="pill" href="#qu1" role="tab" aria-controls="qu1" aria-selected="true">
+              <i class="fas fa-bookmark"></i>
+            </a>
+
+            <a class="nav-link my-2 text-center" id="v-qu2-tab" data-toggle="pill" href="#qu2" role="tab" aria-controls="qu2" aria-selected="false">
+              <i class="fas fa-bookmark"></i>
+            </a>
+
+            <a class="nav-link my-2 text-center" id="v-qu3-tab" data-toggle="pill" href="#qu3" role="tab" aria-controls="qu3" aria-selected="false">
+              <i class="fas fa-bookmark"></i>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="col-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="qu1" role="tabpanel" aria-labelledby="v-qu1-tab">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="question_group">
+                    <h4> Question #1 </h4>
+                    <ul>
+                      <li class="my-1">
+                        Answer 1
+                      </li>
+
+                      <li class="my-1">
+                        Answer 2
+                      </li>
+
+                      <li class="my-1">
+                        Answer 3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="question_group">
+                    <h4> Question #2 </h4>
+                    <ul>
+                      <li class="my-1">
+                        Answer 1
+                      </li>
+
+                      <li class="my-1">
+                        Answer 2
+                      </li>
+
+                      <li class="my-1">
+                        Answer 3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="qu2" role="tabpanel" aria-labelledby="v-qu2-tab">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="question_group">
+                    <h4> Question #3 </h4>
+                    <ul>
+                      <li class="my-1">
+                        Answer 1
+                      </li>
+
+                      <li class="my-1">
+                        Answer 2
+                      </li>
+
+                      <li class="my-1">
+                        Answer 3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="question_group">
+                    <h4> Question #4 </h4>
+                    <ul>
+                      <li class="my-1">
+                        Answer 1
+                      </li>
+
+                      <li class="my-1">
+                        Answer 2
+                      </li>
+
+                      <li class="my-1">
+                        Answer 3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="qu3" role="tabpanel" aria-labelledby="v-qu3-tab">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="question_group">
+                    <h4> Question #5 </h4>
+                    <ul>
+                      <li class="my-1">
+                        Answer 1
+                      </li>
+
+                      <li class="my-1">
+                        Answer 2
+                      </li>
+
+                      <li class="my-1">
+                        Answer 3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="question_group">
+                    <h4> Question #6 </h4>
+                    <ul>
+                      <li class="my-1">
+                        Answer 1
+                      </li>
+
+                      <li class="my-1">
+                        Answer 2
+                      </li>
+
+                      <li class="my-1">
+                        Answer 3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END:: SIDE TABS -->
+
+      <!-- START:: ACCORDION -->
+      <!-- <div class="row justify-content-center">
 
         <div class="col-12 col-md-6 my-3">
           <div class="accordion_wraper">
@@ -295,13 +513,14 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
+      <!-- END:: ACCORDION -->
     </div>
   </div>
   <!-- END:: FAQS SECTION -->
 
   <!-- START:: SCREENS SECTION -->
-  <div id="screens_sec" class="screens">
+  <!-- <div id="screens_sec" class="screens">
     <div class="container">
       <div class="header_wraper">
         <h2> App ScreenShots </h2>
@@ -360,13 +579,13 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- END:: SCREENS SECTION -->
 
   <!-- START:: PRICING SECTION -->
   <div id="pricing_sec" class="pricing_sec">
     <div class="container-fluid">
-      <div class="header_wraper">
+      <div class="header_wraper my-4">
         <h2> Our Pricing Plans </h2>
       </div>
 
@@ -518,14 +737,24 @@
   <!-- START:: CONTACT US SECTION -->
   <div id="contact_sec" class="contact_us">
     <div class="container">
-      <div class="header_wraper">
+      <div class="header_wraper my-4">
         <h2> Contact Us </h2>
         <div class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </div>
       </div>
 
-      <div class="row justify-content-center">
+      <div class="row flex-column align-items-center justify-content-center">
+        <div class="alert_wraper col-12 col-md-8 mt-2">
+          <div class="alert alert-danger text-center" role="alert">
+            Something Went Wrong
+          </div>
+        </div>
+        <div class="alert_wraper col-12 col-md-8 mt-2">
+          <div class="alert alert-success text-center" role="alert">
+            Sent Successfuly
+          </div>
+        </div>
         <div class="col-12 col-md-8">
           <div class="form_wraper">
             <form action="">
@@ -539,9 +768,12 @@
                 <input type="email" class="form-control" name="email" placeholder="Your Email">
               </div>
 
-              <div class="form-group my-4">
-                <i class="fas fa-mobile-alt fa-2x"></i>
-                <input type="text" class="form-control" name="phone" placeholder="Your Phone Number">
+              <div class="my-4">
+                <div class="form-group in-valid">
+                  <i class="fas fa-mobile-alt fa-2x"></i>
+                  <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" name="phone" placeholder="Your Phone Number">
+                </div>
+                <p> Wrong Number </p>
               </div>
 
               <div class="form-group my-4">

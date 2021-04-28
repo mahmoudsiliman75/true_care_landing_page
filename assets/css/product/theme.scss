@@ -18,6 +18,7 @@ html {
 
 // START:: UPPER BAR STYLES
 .upper_bar {
+  background-color: $midBlue;
   .btn_wraper {
     a {
       @include btnStyle();
@@ -172,12 +173,17 @@ nav {
     }
   }
 
-  .intro_info {
-    .container-fluid {
-      .row {
-        .info_text_wraper {
-          margin-top: 50px;
-        }
+  @media (max-width: 700px) {
+    .mockup_wraper {
+      min-width: 500px;
+      max-width: 500px;
+      min-height: 300px;
+      max-height: 300px;
+      .preview {
+        top: 0px;
+        left: 64px;
+        width: 377px;
+        height: 292px;
       }
     }
   }
@@ -309,9 +315,16 @@ nav {
 
 // START:: FAQS SECTION STYLES
 .faqs_sec {
-  .header_wraper {
-    h2 {
-      @include mainHeaderStyle();
+  .nav-pills {
+    .nav-link {
+      color: $deepBlue;
+      &.active {
+        @include btnStyle();
+        background-image: linear-gradient(to right, $midYellow, $mainColor, $deepBlue);
+        &:hover {
+          background-image: linear-gradient(to right, $deepBlue, $mainColor, $midYellow);
+        }
+      }
     }
   }
 

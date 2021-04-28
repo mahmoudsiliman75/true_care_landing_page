@@ -608,10 +608,6 @@ html body::-webkit-scrollbar-thumb {
   transition: all 0.4s ease-in-out;
 }
 
-.upper_bar .info_icons ul li a:hover {
-  color: #27AAE2;
-}
-
 .upper_bar .social_icons ul {
   list-style: none;
   padding: 0;
@@ -1028,7 +1024,14 @@ nav .links_list li.translate_btn a:hover {
   margin-top: 15px;
 }
 
-.intro_sec .intro_info .container-fluid .row .info_text_wraper p {
+.intro_sec .intro_info .container-fluid .row .info_text_wraper h2 {
+  text-align: center;
+  color: #fff;
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+}
+
+.intro_sec .intro_info .container-fluid .row .info_text_wraper div {
   color: #fff;
   font-size: 20px;
   line-height: 1.7;

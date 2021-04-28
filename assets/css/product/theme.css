@@ -2,6 +2,10 @@ html body::-webkit-scrollbar-thumb {
   background-color: #271a4a;
 }
 
+.upper_bar {
+  background-color: #008fbb;
+}
+
 .upper_bar .btn_wraper a {
   border: none;
   background-image: -webkit-gradient(linear, right top, left top, from(#00303f), to(#27AAE2));
@@ -135,8 +139,19 @@ nav .links_list li.translate_btn a:hover {
   border-radius: 3px;
 }
 
-.intro_sec .intro_info .container-fluid .row .info_text_wraper {
-  margin-top: 50px;
+@media (max-width: 700px) {
+  .intro_sec .mockup_wraper {
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .intro_sec .mockup_wraper .preview {
+    top: 0px;
+    left: 64px;
+    width: 377px;
+    height: 292px;
+  }
 }
 
 .about_sec .about_content_wraper h2 {
@@ -279,26 +294,31 @@ nav .links_list li.translate_btn a:hover {
   }
 }
 
-.faqs_sec .header_wraper h2 {
-  position: relative;
+.faqs_sec .nav-pills .nav-link {
   color: #00303f;
-  font-size: 2.5rem;
-  font-weight: 600;
 }
 
-.faqs_sec .header_wraper h2:after {
-  content: "";
-  display: block;
-  width: 25%;
-  height: 2px;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  background-color: #79dca570;
-  -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
-          box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+.faqs_sec .nav-pills .nav-link.active {
+  border: none;
+  background-image: -webkit-gradient(linear, right top, left top, from(#00303f), to(#27AAE2));
+  background-image: linear-gradient(to left, #00303f, #27AAE2);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffb037), color-stop(#27AAE2), to(#00303f));
+  background-image: linear-gradient(to right, #ffb037, #27AAE2, #00303f);
+}
+
+.faqs_sec .nav-pills .nav-link.active:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#00303f), to(#27AAE2));
+  background-image: linear-gradient(to right, #00303f, #27AAE2);
+}
+
+.faqs_sec .nav-pills .nav-link.active:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#00303f), color-stop(#27AAE2), to(#ffb037));
+  background-image: linear-gradient(to right, #00303f, #27AAE2, #ffb037);
 }
 
 .faqs_sec .accordion_wraper .accordion .card .card-header {

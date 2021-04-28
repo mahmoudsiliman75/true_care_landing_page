@@ -2,6 +2,10 @@ html body::-webkit-scrollbar-thumb {
   background-color: #271a4a;
 }
 
+.upper_bar {
+  background-color: #150f25;
+}
+
 .upper_bar .btn_wraper a {
   border: none;
   background-image: -webkit-gradient(linear, right top, left top, from(#00303f), to(#27AAE2));
@@ -140,10 +144,6 @@ nav .links_list li.translate_btn a:hover {
     width: 377px;
     height: 292px;
   }
-}
-
-.intro_sec .intro_info .container-fluid .row .info_text_wraper {
-  margin-top: 50px;
 }
 
 .about_sec .about_content_wraper h2 {
@@ -286,32 +286,36 @@ nav .links_list li.translate_btn a:hover {
   }
 }
 
-.faqs_sec .header_wraper h2 {
-  position: relative;
-  color: #00303f;
-  font-size: 2.5rem;
-  font-weight: 600;
+.faqs_sec .nav-pills .nav-link {
   color: #150f25;
 }
 
-.faqs_sec .header_wraper h2:after {
-  content: "";
-  display: block;
-  width: 25%;
-  height: 2px;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  background-color: #79dca570;
-  -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
-          box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
+.faqs_sec .nav-pills .nav-link.active {
+  border: none;
+  background-image: -webkit-gradient(linear, right top, left top, from(#00303f), to(#27AAE2));
+  background-image: linear-gradient(to left, #00303f, #27AAE2);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: -webkit-gradient(linear, left top, right top, from(#271a4a), color-stop(#7D4196), to(#FF449C));
+  background-image: linear-gradient(to right, #271a4a, #7D4196, #FF449C);
+}
+
+.faqs_sec .nav-pills .nav-link.active:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#00303f), to(#27AAE2));
+  background-image: linear-gradient(to right, #00303f, #27AAE2);
+}
+
+.faqs_sec .nav-pills .nav-link.active:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF449C), color-stop(#7D4196), to(#271a4a));
+  background-image: linear-gradient(to right, #FF449C, #7D4196, #271a4a);
 }
 
 .faqs_sec .accordion_wraper .accordion .card .card-header {
-  background-image: -webkit-gradient(linear, left top, right top, from(#FF449C), color-stop(#7D4196), to(#271a4a));
-  background-image: linear-gradient(to right, #FF449C, #7D4196, #271a4a);
+  background-image: -webkit-gradient(linear, left top, right top, from(#271a4a), color-stop(#7D4196), to(#FF449C));
+  background-image: linear-gradient(to right, #271a4a, #7D4196, #FF449C);
 }
 
 .screens {

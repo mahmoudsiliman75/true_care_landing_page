@@ -18,6 +18,7 @@ html {
 
 // START:: UPPER BAR STYLES
 .upper_bar {
+  background-color: $deepPurple;
   .btn_wraper {
     a {
       @include btnStyle();
@@ -177,16 +178,6 @@ nav {
       }
     }
   }
-
-  .intro_info {
-    .container-fluid {
-      .row {
-        .info_text_wraper {
-          margin-top: 50px;
-        }
-      }
-    }
-  }
 }
 // END:: HOME SECTION STYLES
 
@@ -315,10 +306,16 @@ nav {
 
 // START:: FAQS SECTION STYLES
 .faqs_sec {
-  .header_wraper {
-    h2 {
-      @include mainHeaderStyle();
+  .nav-pills {
+    .nav-link {
       color: $deepPurple;
+      &.active {
+        @include btnStyle();
+        background-image: linear-gradient(to right, $midPurple, $lightPurple, $pink);
+        &:hover {
+          background-image: linear-gradient(to right, $pink, $lightPurple, $midPurple);
+        }
+      }
     }
   }
 
@@ -326,7 +323,7 @@ nav {
     .accordion {
       .card {
         .card-header {
-          background-image: linear-gradient(to right, $pink, $lightPurple, $midPurple);
+          background-image: linear-gradient(to right, $midPurple, $lightPurple, $pink);
         }
       }
     }
