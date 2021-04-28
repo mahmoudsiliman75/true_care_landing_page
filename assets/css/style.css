@@ -1278,6 +1278,35 @@ nav .links_list li.translate_btn a:hover {
           box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
 }
 
+.faqs_sec .nav-pills .nav-link {
+  color: #00303f;
+}
+
+.faqs_sec .nav-pills .nav-link.active {
+  border: none;
+  background-image: -webkit-gradient(linear, right top, left top, from(#00303f), to(#27AAE2));
+  background-image: linear-gradient(to left, #00303f, #27AAE2);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.faqs_sec .nav-pills .nav-link.active:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#00303f), to(#27AAE2));
+  background-image: linear-gradient(to right, #00303f, #27AAE2);
+}
+
+.faqs_sec .tab-content .tab-pane .question_group h5 {
+  color: #00303f;
+}
+
+.faqs_sec .tab-content .tab-pane .question_group ul li {
+  font-size: 18px;
+  color: #666;
+}
+
 .faqs_sec .accordion_wraper .accordion {
   -webkit-box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
           box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);

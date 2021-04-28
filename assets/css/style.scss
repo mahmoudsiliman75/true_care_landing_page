@@ -559,6 +559,32 @@ nav {
     }
   }
 
+  .nav-pills {
+    .nav-link {
+      color: $deepBlue;
+      &.active {
+        @include btnStyle();
+      }
+    }
+  }
+
+  .tab-content {
+    .tab-pane {
+      .question_group {
+        h5 {
+          color: $deepBlue; 
+        }
+
+        ul {
+          li {
+            font-size: 18px;
+            color: $lightGrey;
+          }
+        }
+      }
+    }
+  }
+
   .accordion_wraper {
     .accordion {
       @include midShadow();

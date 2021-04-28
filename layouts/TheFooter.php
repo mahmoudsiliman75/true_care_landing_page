@@ -8,7 +8,7 @@
     </li>
 
     <li> 
-      <a href="#" target="__blanck">
+      <a href="http://m.me/test@test.com" target="__blanck">
         <img src="assets/media/icons/floating_messanger.png" alt="">
       </a>
     </li>

@@ -146,7 +146,7 @@
   <!-- START:: APPLICATIONS SECTION -->
   <div id="apps_sec" class="applications_sec">
     <div class="container">
-      <div class="header_wraper mb-5">
+      <div class="header_wraper my-4">
         <h2> Our TrueCare Apps </h2>
         <div class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -191,11 +191,163 @@
   <!-- START:: FAQS SECTION -->
   <div id="faqs_sec" class="faqs_sec">
     <div class="container">
-      <div class="header_wraper mb-4">
+      <div class="header_wraper my-4">
         <h2> FAQs </h2>
       </div>
 
-      <div class="row justify-content-center">
+      <!-- START:: SIDE TABS -->
+      <div class="row">
+        <div class="col-3">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link my-2 text-center active" id="v-qu1-tab" data-toggle="pill" href="#qu1" role="tab" aria-controls="qu1" aria-selected="true">
+              <i class="fas fa-bookmark"></i>
+            </a>
+
+            <a class="nav-link my-2 text-center" id="v-qu2-tab" data-toggle="pill" href="#qu2" role="tab" aria-controls="qu2" aria-selected="false">
+              <i class="fas fa-bookmark"></i>
+            </a>
+
+            <a class="nav-link my-2 text-center" id="v-qu3-tab" data-toggle="pill" href="#qu3" role="tab" aria-controls="qu3" aria-selected="false">
+              <i class="fas fa-bookmark"></i>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="col-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="qu1" role="tabpanel" aria-labelledby="v-qu1-tab">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="question_group">
+                    <h4> Question #1 </h4>
+                    <ul>
+                      <li class="my-1">
+                        Answer 1
+                      </li>
+
+                      <li class="my-1">
+                        Answer 2
+                      </li>
+
+                      <li class="my-1">
+                        Answer 3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="question_group">
+                    <h4> Question #2 </h4>
+                    <ul>
+                      <li class="my-1">
+                        Answer 1
+                      </li>
+
+                      <li class="my-1">
+                        Answer 2
+                      </li>
+
+                      <li class="my-1">
+                        Answer 3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="qu2" role="tabpanel" aria-labelledby="v-qu2-tab">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="question_group">
+                    <h4> Question #3 </h4>
+                    <ul>
+                      <li class="my-1">
+                        Answer 1
+                      </li>
+
+                      <li class="my-1">
+                        Answer 2
+                      </li>
+
+                      <li class="my-1">
+                        Answer 3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="question_group">
+                    <h4> Question #4 </h4>
+                    <ul>
+                      <li class="my-1">
+                        Answer 1
+                      </li>
+
+                      <li class="my-1">
+                        Answer 2
+                      </li>
+
+                      <li class="my-1">
+                        Answer 3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="qu3" role="tabpanel" aria-labelledby="v-qu3-tab">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="question_group">
+                    <h4> Question #5 </h4>
+                    <ul>
+                      <li class="my-1">
+                        Answer 1
+                      </li>
+
+                      <li class="my-1">
+                        Answer 2
+                      </li>
+
+                      <li class="my-1">
+                        Answer 3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="question_group">
+                    <h4> Question #6 </h4>
+                    <ul>
+                      <li class="my-1">
+                        Answer 1
+                      </li>
+
+                      <li class="my-1">
+                        Answer 2
+                      </li>
+
+                      <li class="my-1">
+                        Answer 3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END:: SIDE TABS -->
+
+      <!-- START:: ACCORDION -->
+      <!-- <div class="row justify-content-center">
 
         <div class="col-12 col-md-6 my-3">
           <div class="accordion_wraper">
@@ -300,7 +452,8 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
+      <!-- END:: ACCORDION -->
     </div>
   </div>
   <!-- END:: FAQS SECTION -->
@@ -308,7 +461,7 @@
   <!-- START:: OUR CLIENTS SECTION -->
   <div id="clients_sec" class="clients_sec">
     <div class="container-fluid">
-      <div class="header_wraper mb-4">
+      <div class="header_wraper my-4">
         <h2> Our Success Partners </h2>
       </div>
 
@@ -445,7 +598,7 @@
   <!-- START:: CONTACT US SECTION -->
   <div id="contact_sec" class="contact_us">
     <div class="container">
-      <div class="header_wraper">
+      <div class="header_wraper my-4">
         <h2> Contact Us </h2>
         <div class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
