@@ -312,8 +312,8 @@
         <h2> Our Success Partners </h2>
       </div>
 
-      <div class="row flex-column align-items-center justify-content-center mt-3 overflow-hidden">
-        <div id="clients" class="owl-carousel owl-theme col-11">
+      <div class="row align-items-center justify-content-center mt-3 overflow-hidden">
+        <!-- <div id="clients" class="owl-carousel owl-theme col-11">
 
           <div class="item text-center">
             <div class="img_wraper">
@@ -364,6 +364,78 @@
           </div>
 
 
+        </div> -->
+
+        <div class="col-6 col-md-2 p-2">
+          <div class="client_imag_wraper">
+            <img src="assets/media/clients/prand1.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 p-2">
+          <div class="client_imag_wraper">
+            <img src="assets/media/clients/prand2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 p-2">
+          <div class="client_imag_wraper">
+            <img src="assets/media/clients/prand3.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 p-2">
+          <div class="client_imag_wraper">
+            <img src="assets/media/clients/prand4.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 p-2">
+          <div class="client_imag_wraper">
+            <img src="assets/media/clients/prand5.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 p-2">
+          <div class="client_imag_wraper">
+            <img src="assets/media/clients/prand1.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 p-2">
+          <div class="client_imag_wraper">
+            <img src="assets/media/clients/prand1.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 p-2">
+          <div class="client_imag_wraper">
+            <img src="assets/media/clients/prand2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 p-2">
+          <div class="client_imag_wraper">
+            <img src="assets/media/clients/prand3.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 p-2">
+          <div class="client_imag_wraper">
+            <img src="assets/media/clients/prand4.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 p-2">
+          <div class="client_imag_wraper">
+            <img src="assets/media/clients/prand5.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 p-2">
+          <div class="client_imag_wraper">
+            <img src="assets/media/clients/prand1.png" alt="">
+          </div>
         </div>
       </div>
     </div>

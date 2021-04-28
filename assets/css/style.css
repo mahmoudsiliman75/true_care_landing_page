@@ -561,8 +561,7 @@ html body::-webkit-scrollbar-thumb {
 
 .upper_bar {
   padding: 0 8px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#00303f), color-stop(#076585), to(#f2f2f2));
-  background-image: linear-gradient(to right, #00303f, #076585, #f2f2f2);
+  background-color: #00303f;
 }
 
 .upper_bar .hint_wraper p {
@@ -1346,28 +1345,15 @@ nav .links_list li.translate_btn a:hover {
           box-shadow: 0 0 10px 2px rgba(225, 225, 225, 0.6);
 }
 
-.clients_sec .owl-carousel {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.clients_sec .client_imag_wraper {
+  width: 200px;
+  height: 200px;
 }
 
-.clients_sec .owl-carousel .item .img_wraper {
-  min-height: 150px;
-  max-height: 150px;
-}
-
-.clients_sec .owl-carousel .item .img_wraper img {
+.clients_sec .client_imag_wraper img {
   width: 100%;
-  min-height: 150px;
-  max-height: 150px;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .contact_us {
