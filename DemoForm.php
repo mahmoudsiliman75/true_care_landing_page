@@ -84,7 +84,7 @@
                   <h2 class="text-center"> Basic Information </h2>
                 </div>
                 <div class="row justify-content-center">
-                  <div class="col-md-6">
+                  <div class="col-md-4">
                     <div class="form-group">
                       <label> Name <span class="text-danger">*</span></label>
                       <input type="text" class="form-control is-invalid" aria-describedby="invalid_field" required>
@@ -94,21 +94,40 @@
                     </div>
                   </div>
 
-                  <div class="col-md-6">
+                  <div class="col-md-4">
                     <div class="form-group">
                       <label>Phone Number <span class="text-danger">*</span></label> 
                       <input class="form-control" type="text" name="number" required> 
                     </div>
                   </div>
 
-                  <div class="col-md-6">
+                  <div class="col-md-4">
                     <div class="form-group">
                       <label> Email <span class="text-danger">*</span></label> 
                       <input class="form-control" type="email" name="email" required> 
                     </div>
                   </div>
 
-                  <div class="col-md-6">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label> City <span class="text-danger">*</span></label> 
+                      <select name="city" class="form-control" id="city" required>
+                        <option>Select Yor City</option>
+                        <option value="0">City 1</option>
+                        <option value="1">Cit 2</option>
+                        <option value="2">City 3</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label> Adress <span class="text-danger">*</span></label> 
+                      <input class="form-control" type="text" name="adress" required> 
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
                     <div class="form-group">
                       <label> Usage <span class="text-danger">*</span></label> 
                       <select name="usage" class="form-control" id="usage" required>
